@@ -330,47 +330,6 @@ body {
     margin-top: 24px;
 }
 
-/* FOOTER */
-.footer {
-    background: #A97E88;
-    text-align: center;
-    width: 100vw;
-}
-
-.footer .whole {
-    padding: 30px 80px 40px 80px;
-}
-
-.footer .title {
-    font-weight: 700;
-    font-size: 38.5146px;
-    line-height: 120%;
-    color: #42290E;
-}
-
-.footer .desc {
-    text-align: center;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 32px;
-    align-items: center;
-    color: #000000;
-    margin-top: 30px;
-}
-
-.footer .bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    color: #000000;
-    margin-top: 24px;
-}
-
 @media screen and (max-width: 1500px){
     .section-2 .mainPict{
         width: 33vw;
