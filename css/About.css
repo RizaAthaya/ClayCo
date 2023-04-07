@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Sora";
+  margin: 0%;
+  padding: 0%;
+  /* width: 100vw; */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+}
+
+.section-1 {
+  align-items: center;
+  width: 100vw;
+  height: 892px;
+  display: flex;
+  background: #f3deba;
+}
+.section-1 .left {
+  width: 50vw;
+}
+.section-1 .right {
+  width: 50vw;
+}
+.section-1 .subtitle {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.section-1 .title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  color: #000000;
+}
+.section-1 .desc {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 140%;
+  color: #000000;
+  opacity: 0.9;
+}
+.section-1 .circle {
+  position: absolute;
+  width: 244px;
+  height: 232px;
+  left: 45vw;
+  /* bottom: 0px; */
+  top: 550px;
+  border-radius: 100%;
+}
+.section-1 .woman {
+  position: absolute;
+  width: 626px;
+  height: 407px;
+  left: 748px;
+  top: 272px;
+  background: url(pexels-ivan-samkov-4240503.jpg);
+  border-radius: 11px;
+}
+.section-1 .dots {
+  position: absolute;
+  width: 180px;
+  height: 78px;
+  left: 1222px;
+  top: 251px;
+}
