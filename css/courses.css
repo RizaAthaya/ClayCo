@@ -16,6 +16,8 @@ body {
     max-width: 100vw;
 }
 
+
+/* NAVBAR  */
 .navbar {
     z-index: 999999999;
     width: 100vw;
@@ -35,7 +37,7 @@ body {
     margin: 0%;
 }
 
-.navbar ul li {
+.navbar ul li a {
     margin: 20px 26px;
 
     /* text */
@@ -45,6 +47,29 @@ body {
     display: flex;
     align-items: center;
     color: #000000;
+    text-decoration: none;
+
+}
+
+.navbar ul li a::after {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+.navbar ul li a:hover {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #f9e4cc;
+    text-decoration: none;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 .navbar .left {
@@ -285,75 +310,90 @@ body {
 
 
 @media screen and (max-width: 500px) {
+
     /* NAVBAR */
-    .navbar .left{
+    .navbar .left {
         margin-left: 10vw;
     }
-    .navbar .center{
+
+    .navbar .center {
         display: none;
     }
-    .navbar .right{
+
+    .navbar .right {
         display: none;
     }
-    
+
     /* SECTION 2 */
-    .section-2{
+    .section-2 {
         display: block;
     }
-    .section-2 .whole{
+
+    .section-2 .whole {
         padding-top: 90px;
         display: block;
     }
-    .section-2 .title{
+
+    .section-2 .title {
         width: 85vw;
         font-size: 34px;
     }
-    .section-2 .desc{
+
+    .section-2 .desc {
         margin-top: 10px;
         width: 80vw;
         font-size: 16px;
     }
-    .section-2 .mainPict{
+
+    .section-2 .mainPict {
         margin-top: 50px;
         width: 80vw;
     }
-    .section-2 .dots{
+
+    .section-2 .dots {
         width: 25vw;
         transform: translateX(60vw);
     }
-    .section-2 .circle{
+
+    .section-2 .circle {
         width: 20vw;
         transform: translateY(140px) translateX(-30vw);
     }
 
     /* SECTION 3 */
-    .section-3 .atas{
+    .section-3 .atas {
         display: block;
         margin-bottom: 0;
     }
-    .section-3 .bawah{
+
+    .section-3 .bawah {
         display: block;
         padding-bottom: 20px;
         margin-bottom: 0;
     }
-    .section-3 .card{
+
+    .section-3 .card {
         margin: auto;
         width: 80vw;
         margin-bottom: 50px;
         height: auto;
     }
+
     .section-3 .name {
         margin-bottom: 0;
     }
+
     .section-3 .title {
         font-size: 12px;
     }
-    .section-3 .desc{
+
+    .section-3 .desc {
         margin-left: 5px;
         padding: 5px;
         font-size: 14px;
     }
-    .section-3 button{
+
+    .section-3 button {
         display: flex;
         justify-content: center;
         margin: 10px auto;
@@ -361,13 +401,11 @@ body {
     }
 
     /* FOOTER  */
-    .footer .bottom{
+    .footer .bottom {
         display: block;
     }
 
-    .footer .text{
+    .footer .text {
         margin-bottom: 10px;
     }
 }
-
-
