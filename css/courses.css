@@ -285,7 +285,7 @@ body {
     color: #42290E;
 }
 
-.footer .desc {
+.footer .desc a{
     text-align: center;
     font-weight: 700;
     font-size: 15px;

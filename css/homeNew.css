@@ -331,7 +331,7 @@ body {
     color: #42290E;
 }
 
-.footer .desc {
+.footer .desc a {
     text-align: center;
     font-weight: 700;
     font-size: 15px;
@@ -354,13 +354,53 @@ body {
     margin-top: 24px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px)and (min-width: 1200px) {
     .section-2 .mainPict {
         width: 33vw;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px)and (min-width: 800px) {
+    .section-2 {
+        display: block;
+    }
+
+    .section-2 .left {
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        width: 90vw;
+        padding-top: 100px;
+    }
+
+    .section-2 .right {
+        margin: auto;
+        width: 90vw;
+        padding-left: 7vw;
+    }
+
+    .section-2 .mainPict {
+        margin: 0;
+        position: relative;
+        width: 50%;
+        height: auto;
+    }
+
+    .section-2 .circle {
+        position: absolute;
+        transform: translateX(0), translateY(0);
+        top: 990px;
+        left: 35vw;
+    }
+
+    .section-2 .dots {
+        position: absolute;
+        transform: translateX(0), translateY(0);
+        left: 30vw;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 450px) {
 
     /* NAVBAR */
     .navbar .left {
@@ -393,7 +433,7 @@ body {
 
     .section-2 .left {
         width: 100vw;
-        height: 300px;
+        height: auto;
     }
 
     .section-2 .right {
@@ -404,21 +444,134 @@ body {
     }
 
     .section-2 .mainPict {
+        position: relative;
         display: flex;
         justify-content: center;
-        width: 80vw;
-        margin-left: 10vw;
+        width: 50vw;
+        margin: auto;
         margin-top: 30px;
     }
 
     .section-2 .dots {
-        transform: translateX(70vw) translateY(-100px);
-        width: 25vw;
+        position: absolute;
+        top: 410px;
+        left: 30vw;
+        /* transform: translateX(70vw) translateY(-100px); */
+        width: 15vw;
     }
 
     .section-2 .circle {
+        position: absolute;
+        top: 630px;
+        left: 30vw;
+        width: 15vw;
+        /* transform: translateY(140px) translateX(-22vw); */
+    }
+
+    .section-2 .box {
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .section-2 .pict1 {
+        height: auto;
         width: 25vw;
-        transform: translateY(140px) translateX(-22vw);
+        border: none;
+        margin-right: 15px;
+    }
+
+    .section-2 .icon1 {
+        display: none;
+    }
+
+    .section-2 .text {
+        width: 80vw;
+    }
+
+    .section-2 .text1 {
+        font-size: 20px;
+    }
+
+    .section-2 .text2 {
+        margin-top: 8px;
+        font-size: 13px;
+    }
+
+    /* FOOTER  */
+    .footer .bottom {
+        display: block;
+    }
+
+    .footer .text {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    /* NAVBAR */
+    .navbar .left {
+        margin-left: 10vw;
+    }
+
+    .navbar .center {
+        display: none;
+    }
+
+    .navbar .right {
+        display: none;
+    }
+
+    /* CAROUSEL  */
+    .carousel-part {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    /* SECTION 2 */
+    .section-2 {
+        width: 100vw;
+        display: block;
+    }
+
+    .section-2 .left {
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-2 .right {
+        transform: translate(0);
+        width: 100vw;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .section-2 .mainPict {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 50vw;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .section-2 .dots {
+        position: absolute;
+        top: 400px;
+        left: 30vw;
+        /* transform: translateX(70vw) translateY(-100px); */
+        width: 15vw;
+    }
+
+    .section-2 .circle {
+       display: none;
     }
 
     .section-2 .box {
