@@ -97,10 +97,12 @@ body {
 .navbar .hamburger {
     display: none;
 }
-.navbar .dropdownHid{
+
+.navbar .dropdownHid {
     display: none;
 }
-.navbar .dropdown{
+
+.navbar .dropdown {
     color: #fff;
     position: absolute;
     top: 60px;
@@ -110,14 +112,17 @@ body {
     height: auto;
     background-color: #5b4732;
 }
+
 .navbar .dropdown ul {
     list-style: none;
     display: block;
 }
-.navbar .dropdown ul li{
+
+.navbar .dropdown ul li {
     display: block;
 }
-.navbar .dropdown ul li a{
+
+.navbar .dropdown ul li a {
     color: #fff;
 }
 
@@ -314,7 +319,7 @@ body {
     color: #42290E;
 }
 
-.footer .desc {
+.footer .desc a {
     text-align: center;
     font-weight: 700;
     font-size: 15px;
@@ -335,4 +340,210 @@ body {
     line-height: 140%;
     color: #000000;
     margin-top: 24px;
+}
+
+@media screen and (max-width: 1400px)and (min-width: 800px) {
+
+    /* SECTION 1 */
+    .section1 .semua-box {
+        display: block;
+        margin: auto;
+    }
+
+    .section1 .box {
+        width: 80vw;
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    /* SECTION 2 */
+    .section2 .box {
+        width: 40vw;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .section2 .box.hid {
+        display: none;
+    }
+
+    .section2 img {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+
+    /* NAVBAR */
+    .navbar .left {
+        margin-left: 5vw;
+    }
+
+    .navbar .center {
+        display: none;
+    }
+
+    .navbar .right {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
+        display: block;
+        transform: rotate(90deg);
+    }
+
+    /* SECTION 1 */
+    .section1 .whole{
+        padding: 0%;
+        margin: auto;
+        /* padding-left: 5vw; */
+    }
+    .section1 .title{
+        text-align: center;
+    }
+    .section1 .semua-box {
+        display: block;
+        margin: auto;
+    }
+
+    .section1 .box {
+        width: 80vw;
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    /* SECTION 2 */
+    .section2 .title{
+        margin-bottom: 35px;
+    }
+    .section2 .semua-box{
+        margin: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+    .section2 .atas{
+        margin: auto;
+        display: block;
+    }
+    .section2 .bawah{
+        margin: auto;
+        display: block;
+        margin-bottom: 0;
+    }
+    .section2 .box{
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    
+    /* FOOTER  */
+    .footer .bottom {
+        display: block;
+    }
+
+    .footer .text {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 800px){
+    
+    /* NAVBAR */
+    .navbar .left {
+        margin-left: 5vw;
+    }
+
+    .navbar .center {
+        display: none;
+    }
+
+    .navbar .right {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
+        display: block;
+        transform: rotate(90deg);
+    }
+
+    /* SECTION 1 */
+    .section1 .whole {
+        margin: 0;
+    }
+    .section1 .title{
+        text-align: center;
+    }
+    .section1 .semua-box{
+        display: block;
+        margin: auto;
+    }
+    .section1 .box{
+        margin: auto;
+        width: 85vw;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .section1 hr{
+        margin: 10px 0;
+    }
+    .section1 .desc{
+        font-size: 14px;
+        font-weight: 450;
+    }
+
+
+    /* SECTION 2 */
+    .section2 .whole{
+        margin: auto;
+    }
+    .section2 .title{
+        margin-bottom: 35px;
+    }
+    .section2 .atas{
+        display: block;
+        margin-bottom: 0;
+    }
+    .section2 .bawah{
+        display: block;
+    }
+    .section2 .box{
+        margin: auto;
+        display: block;
+        width: 80vw;
+        margin-bottom: 15px;
+        padding: 16px;
+    }
+    .section2 .desc{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .section2 .text{
+        margin-left: 8px;
+    }
+    .section2 img{
+        display: none;
+    }
+
+
+    /* FOOTER  */
+    .footer .bottom {
+        display: block;
+    }
+
+    .footer .text {
+        margin-bottom: 10px;
+    }
+
 }
