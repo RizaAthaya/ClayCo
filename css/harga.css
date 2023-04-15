@@ -94,6 +94,34 @@ body {
     color: #FFFFFF;
 }
 
+.navbar .hamburger {
+    display: none;
+}
+.navbar .dropdownHid{
+    display: none;
+}
+.navbar .dropdown{
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 3vw;
+    display: block;
+    width: 25vw;
+    height: auto;
+    background-color: #5b4732;
+}
+.navbar .dropdown ul {
+    list-style: none;
+    display: block;
+}
+.navbar .dropdown ul li{
+    display: block;
+}
+.navbar .dropdown ul li a{
+    color: #fff;
+}
+
+
 
 /* SECTION 1 */
 .section1 {
@@ -260,7 +288,7 @@ body {
     margin-bottom: 8px;
 }
 
-.section2 .desc a{
+.section2 .desc a {
     font-weight: 300;
     font-size: 16px;
     line-height: 140%;

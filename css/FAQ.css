@@ -98,6 +98,39 @@ body {
     color: #FFFFFF;
 }
 
+.navbar .hamburger {
+    display: none;
+}
+
+.navbar .dropdownHid {
+    display: none;
+}
+
+.navbar .dropdown {
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 5vw;
+    display: block;
+    width: 150px;
+    height: auto;
+    background-color: #5b4732;
+}
+
+.navbar .dropdown ul {
+    list-style: none;
+    display: block;
+}
+
+.navbar .dropdown ul li {
+    display: block;
+}
+
+.navbar .dropdown ul li a {
+    color: #fff;
+}
+
+
 
 /* HERO */
 .hero {
@@ -221,6 +254,7 @@ body {
 }
 
 .section-1 .active1 {
+    display: block;
     background: linear-gradient(0deg, #F2E2D6, #F2E2D6), linear-gradient(0deg, #0E2D58, #0E2D58), #102542;
     border-radius: 8px;
 }
@@ -247,6 +281,7 @@ body {
 }
 
 .section-1 .active3 {
+    display: block;
     background: linear-gradient(0deg, #F2E2D6, #F2E2D6), linear-gradient(0deg, #0E2D58, #0E2D58), #102542;
     border-radius: 8px;
 }
@@ -273,6 +308,7 @@ body {
 }
 
 .section-1 .active4 {
+    display: block;
     background: linear-gradient(0deg, #F2E2D6, #F2E2D6), linear-gradient(0deg, #0E2D58, #0E2D58), #102542;
     border-radius: 8px;
 }
@@ -287,6 +323,13 @@ body {
     display: flex;
     margin: auto;
 }
+.section-2 .whole{
+    width: 100vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .section-2 .left {
     padding-left: 5vw;
@@ -298,17 +341,21 @@ body {
 }
 
 .section-2 .right {
-    padding-right: 5vw;
+    /* padding-right: 5vw; */
     width: 50vw;
 }
 
+.section-2 .inputbox{
+    margin: auto;
+    width: 50vw;
+}
 .section-2 input {
     margin-bottom: 10px;
     color: #fff;
     align-items: flex-start;
     padding: 2px 16px;
-    width: 620px;
-    height: 48px;
+    width: 43vw;
+    height: 58px;
     background: #000000;
     border-radius: 100px;
 }
@@ -330,7 +377,7 @@ body {
 
 .section-2 .title {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 170%;
     display: flex;
     align-items: center;
@@ -378,11 +425,76 @@ body {
     margin-top: 24px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+
+    /* HERO */
+    .hero {
+        display: block;
+        padding-top: 150px;
+    }
+
+    .whole-hero {
+        width: 90vw;
+        display: block;
+        padding: 0 5vw;
+    }
+
+    .hero .left {
+        width: 100%;
+    }
+
+    .hero h3 {
+        font-size: 35px;
+    }
+
+    .hero .right {
+        width: 100%;
+    }
+
+    .hero .woman {
+        margin-top: 50px;
+        width: 70vw;
+        max-width: 600px;
+        height: auto;
+        transform: none;
+    }
+
+    .hero .circle {
+        width: 20vw;
+        max-width: 150px;
+        transform: translateY(-110px) translateX(125px);
+    }
+
+    .hero .dots {
+        width: 20vw;
+        transform: translateY(-480px) translateX(45vw);
+    }
+    .section-2 {
+        justify-content: space-around;
+    }
+    .section-2 .whole{
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .section-2 .left{
+        padding: 0;
+        width: 25vw;
+        font-size: 35px;
+    }
+    .section-2 input{
+        width: 100%;
+        height: 48px;
+    }
+    .section-2 .title{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
 
     /* NAVBAR */
     .navbar .left {
-        margin-left: 10vw;
+        margin-left: 5vw;
     }
 
     .navbar .center {
@@ -391,6 +503,17 @@ body {
 
     .navbar .right {
         display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
+        display: block;
+        transform: rotate(90deg);
     }
 
     /* HERO */
@@ -459,6 +582,21 @@ body {
         width: 80vw;
     }
 
+    .section-1 .dropdown {
+        display: flex;
+        /* max-width: 60vw; */
+        padding: 12px;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .section-1 .atas {
+        width: 100%;
+    }
+
     .section-1 .atas .title {
         font-size: 20px;
     }
@@ -470,12 +608,20 @@ body {
         font-size: 14px;
     }
 
+    .section-1 .active1,
+    .section-1 .active3,
+    .section-1 .active4 {
+        display: block;
+    }
+
     /* SECTION 2 */
     .section-2 {
         display: block;
         margin: auto;
     }
-
+    .section-2 .whole{
+        display: block;
+    }
     .section-2 .left {
         margin: 0%;
         padding: 0 4vw;
@@ -484,7 +630,7 @@ body {
     }
 
     .section-2 h3 {
-        font-size: 33px;
+        font-size: 28px;
         text-align: center;
     }
 
@@ -504,6 +650,7 @@ body {
 
     .section-2 input {
         width: 90%;
+        height: 38px;
     }
 
     .section-2 button {

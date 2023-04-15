@@ -24,7 +24,41 @@
         <div class="right">
             <button class="profile">Profile</button>
         </div>
+        <div class="hamburger" id="burger">
+            <img src="/assets/icon/hamburger.svg">
+        </div>
+        <div class="dropdownHid" id="DDb">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/html/Courses.html">Courses</a></li>
+                <li> <a href="/html/FAQ.html">FAQ</a></li>
+                <li><a href="/html/About.html">About Us</a></li>
+            </ul>
+        </div>
     </div>
+    <script>
+        // Mendapatkan elemen heading berdasarkan id
+        const DD = document.getElementById("DDb");
+        const burger = document.getElementById('burger');
+
+        // Fungsi handleClick untuk mengubah kelas dari elemen
+        function handleClick() {
+            // Menggunakan properti classList untuk menambahkan atau menghapus kelas
+            if (DD.classList.contains("dropdownHid")) {
+                DD.classList.remove("dropdownHid");
+                DD.classList.add("dropdown");
+                burger.classList.remove("hamburger");
+                burger.classList.add('hamburger2');
+            } else {
+                DD.classList.remove("dropdown");
+                DD.classList.add("dropdownHid");
+                burger.classList.remove("hamburger2");
+                burger.classList.add('hamburger');
+            }
+        }
+        // Menambahkan event listener ke elemen heading untuk event click
+        burger.addEventListener("click", handleClick);
+    </script>
 
     <!-- SECTION 1 -->
     <div class="section-1" id="top">

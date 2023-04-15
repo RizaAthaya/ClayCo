@@ -60,6 +60,7 @@ body {
     color: #000000;
     text-decoration: none;
 }
+
 .navbar ul li a:hover {
     font-weight: 700;
     font-size: 15px;
@@ -95,6 +96,33 @@ body {
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+.navbar .dropdownHid{
+    display: none;
+}
+.navbar .dropdown{
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 5vw;
+    display: block;
+    width: 150px;
+    height: auto;
+    background-color: #5b4732;
+}
+.navbar .dropdown ul {
+    list-style: none;
+    display: block;
+}
+.navbar .dropdown ul li{
+    display: block;
+}
+.navbar .dropdown ul li a{
+    color: #fff;
 }
 
 
@@ -248,16 +276,18 @@ body {
     color: #000000;
 }
 
-.section-3 button {
+.section-3 a{
     margin: auto;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 90%;
     background: #42290E;
     border-radius: 100px;
     align-items: center;
-    padding: 14px 20px;
+    padding: 12px 14px;
+    text-decoration: none;
 
     /* text */
     font-weight: 700;
@@ -285,7 +315,7 @@ body {
     color: #42290E;
 }
 
-.footer .desc a{
+.footer .desc a {
     text-align: center;
     font-weight: 700;
     font-size: 15px;
@@ -308,12 +338,84 @@ body {
     margin-top: 24px;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    /* SECTION 2 */
+    .section-2 .whole{
+        display: block;
+    }
+    .section-2 .left{
+        width: 80vw;
+    }
+    .section-2 .right{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .section-2 .mainPict{
+        padding: 80px;
+        position: relative;
 
-@media screen and (max-width: 500px) {
+    }
+    .section-2 .circle{
+        top: 70px;
+        position: absolute;
+    }
+    .section-2 .dots{
+        top: 70px;
+        right:40vw;
+        position: absolute;
+    }
+
+    
+    /* SECTION 3 */
+    .section-3 .atas {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .section-3 .bawah {
+        display: block;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    .section-3 .card {
+        margin: auto;
+        width: 80vw;
+        max-width: 600px;
+        margin-bottom: 50px;
+        height: auto;
+    }
+
+    .section-3 .name {
+        margin-bottom: 0;
+    }
+
+    .section-3 .title {
+        font-size: 12px;
+    }
+
+    .section-3 .desc {
+        margin-left: 5px;
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .section-3 button {
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
 
     /* NAVBAR */
     .navbar .left {
-        margin-left: 10vw;
+        margin-left: 5vw;
     }
 
     .navbar .center {
@@ -324,9 +426,29 @@ body {
         display: none;
     }
 
+    .navbar .hamburger {
+        display: block;
+        margin-right: 5vw;
+    }
+    .navbar .hamburger2{
+        transform-origin: top left; 
+        display: block;
+        transform:rotate(90deg);
+    }
+
     /* SECTION 2 */
     .section-2 {
         display: block;
+    }
+    .section-2 .whole{
+        padding-bottom: 10px;
+    }
+    .section-2 .right{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
     }
 
     .section-2 .whole {
@@ -346,18 +468,27 @@ body {
     }
 
     .section-2 .mainPict {
+        position: relative;
+        display: flex;
+        margin: auto;
         margin-top: 50px;
         width: 80vw;
+        max-width: 400px;
+        /* width: 70vw; */
     }
 
     .section-2 .dots {
+        position: absolute;
         width: 25vw;
-        transform: translateX(60vw);
+        top: 55px;
+        /* transform: translateX(60vw); */
     }
 
     .section-2 .circle {
+        position: absolute;
         width: 20vw;
-        transform: translateY(140px) translateX(-30vw);
+        left:30px;
+        /* transform: translateY(140px) translateX(-30vw); */
     }
 
     /* SECTION 3 */
@@ -375,6 +506,7 @@ body {
     .section-3 .card {
         margin: auto;
         width: 80vw;
+        max-width: 500px;
         margin-bottom: 50px;
         height: auto;
     }
