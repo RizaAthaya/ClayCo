@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/Circle.svg" type="image/svg+xml">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Payment.css">
+    <title>Clay Course</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="left"> Clay Course</div>
+        <div class="center">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/html/Courses.html">Courses</a></li>
+                <li> <a href="/html/FAQ.html">FAQ</a></li>
+                <li><a href="/html/About.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="profile">Profile</button>
+        </div>
+        <div class="hamburger" id="burger">
+            <img src="/assets/icon/hamburger.svg">
+        </div>
+        <div class="dropdownHid" id="DDb">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/html/Courses.html">Courses</a></li>
+                <li> <a href="/html/FAQ.html">FAQ</a></li>
+                <li><a href="/html/About.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Mendapatkan elemen heading berdasarkan id
+        const DD = document.getElementById("DDb");
+        const burger = document.getElementById('burger');
+
+        // Fungsi handleClick untuk mengubah kelas dari elemen
+        function handleClick() {
+            // Menggunakan properti classList untuk menambahkan atau menghapus kelas
+            if (DD.classList.contains("dropdownHid")) {
+                DD.classList.remove("dropdownHid");
+                DD.classList.add("dropdown");
+                burger.classList.remove("hamburger");
+                burger.classList.add('hamburger2');
+            } else {
+                DD.classList.remove("dropdown");
+                DD.classList.add("dropdownHid");
+                burger.classList.remove("hamburger2");
+                burger.classList.add('hamburger');
+            }
+        }
+        // Menambahkan event listener ke elemen heading untuk event click
+        burger.addEventListener("click", handleClick);
+    </script>
+    <!-- SECTION 1 -->
+    <div class="section1" id="top">
+        <div class="whole">
+            <div class="left">
+                <h3>QR Code</h3>
+                <img src="../assets/qr.svg">
+            </div>
+            <div class="right">
+                <div class="semua-box">
+                    <div class="box-1">
+                        <div class="top">
+                            <h3 class="title">Harga Kelas dengan Tools</h3>
+                            <h3 class="price">Rp 180.000,00</h3>
+                        </div>
+                        <div class="bottom">
+                            <h3 class="title">Total Pembayaran</h3>
+                            <h3 class="price">Rp 180.000,00</h3>
+                        </div>
+                        <button>Konfirmasi Pembayaran</button>
+                    </div>
+                    <div class="box-2">
+                        <h3 class="title">Metode pembayaran yang didukung</h3>
+                        <img src="../assets/qris.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="whole">
+            <h3 class="title">Course Kit</h3>
+            <h3 class="desc"> <a href="#top">Back to Top</a></h3>
+            <div class="bottom">
+                <h3 class="text">Built by Kelompok 3 | Ayam Goreng Mail</h3>
+                <div class="image">
+                    <img src="../assets/icon/Email.svg">
+                    <img src="../assets/icon/Facebook.svg">
+                    <img src="../assets/icon/Youtube.svg">
+                    <img src="../assets/icon/Instagram.svg">
+                    <img src="../assets/icon/Twitter.svg">
+                    <img src="../assets/icon/Tiktok.svg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -127,6 +127,7 @@ body {
 
 /* SECTION 1 */
 .section-1 {
+  min-height: 50vw;
   align-items: center;
   width: 100vw;
   height: auto;
@@ -140,6 +141,7 @@ body {
 }
 
 .section-1 .right {
+  display: flex;
   margin: auto;
   padding-top: 150px;
   justify-content: center;
@@ -172,23 +174,8 @@ body {
   opacity: 0.9;
 }
 
-.section-1 .woman {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 70%;
-  z-index: 3;
-  transform: translateY(-100px);
-}
-
-.section-1 .circle {
-  width: 10vw;
-  transform: translateX(-60px) translateY(380px);
-}
-
-.section-1 .dots {
-  width: 15vw;
-  transform: translateX(23vw)translateY(-50px);
+.section-1 .pict{
+  width: 80%;
 }
 
 /* SECTION 2 */
@@ -276,6 +263,7 @@ body {
 @media screen and (max-width: 1200px) and (min-width: 800px) {
   .section-1 {
     display: block;
+    padding-bottom: 25px;
   }
 
   .section-1 .left {
@@ -284,27 +272,11 @@ body {
   }
 
   .section-1 .right {
+    padding: 0;
     display: flex;
     justify-content: center;
     margin: auto;
     width: 70vw;
-  }
-
-  .section-1 .woman {
-    position: relative;
-    width: 80vw;
-    max-width: 500px;
-    transform: translateY(-100px) translateX(-10vw);
-  }
-
-  .section-1 .circle {
-    display: flex;
-    transform: translate(10vw, 8vw);
-  }
-
-  .section-1 .dots {
-    display: flex;
-    transform: translate(50vw, -25vw);
   }
 
   .section-2 {
@@ -377,32 +349,13 @@ body {
   }
 
   .section-1 .right {
-    margin-top: 150px;
-    padding-top: 0;
+    /* margin-top: 0px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
     /* padding-left: 15px; */
     /* margin-top: 50px; */
     width: 90vw;
     /* padding-left: 9.5vw; */
-  }
-
-  .section-1 .woman {
-    position: relative;
-    width: 80vw;
-    max-width: 450px;
-    border-radius: 8px;
-  }
-
-  .section-1 .dots {
-    display: none;
-    width: 30vw;
-    transform: translateY(-50px) translateX(130px);
-  }
-
-  .section-1 .circle {
-    display:  none;
-    width: 30vw;
-    z-index: 100;
-    transform: translateX(30px) translateY(250px);
   }
 
   /* SECTION 2 */
