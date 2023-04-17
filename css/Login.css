@@ -131,113 +131,126 @@ body {
     color: #fff;
 }
 
-/* SECTION 1 */
-.section1 {
-    background: #F2E2D6;
-}
-
-.section1 .whole {
+/* LOGIN  */
+.login {
     display: flex;
     justify-content: center;
+    background: #F3DEBA;
     margin: auto;
+    min-height: 50vw;
+}
+
+.login .whole{
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.login .box {
+    box-shadow: 50px;
+    width: 546px;
+    height: auto;
+    max-height: 400px;
+    background: #FFFFFF;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    padding: 27px 25px 40px 25px;
+}
+
+.login .title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
     align-items: center;
-    padding: 160px 5vw 98px 5vw;
+    color: #25172E;
+    margin-bottom: 11px;
 }
 
-.section1 .left {
-    background: #F5F5F5;
-    border: 1px solid #000000;
-    border-radius: 12px;
-    /* margin: auto; */
-    width: auto;
-    margin-right: 5vw;
-}
+.login .textinput {
+    width: 90%;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    padding: 12px 25px;
 
-.section1 .left h3 {
-    margin: 0;
-    padding-top: 48px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 120%;
-    color: #000000;
-}
-
-.section1 .left img {
-    justify-content: center;
-    display: flex;
-    margin: auto;
-    width: 85%;
-    max-width: 514px;
-    max-height: 561px;
-}
-
-.section1 .semua-box {
-    display: block;
-}
-
-.section1 .box-1 {
-    background: #F5F5F5;
-    border: 1px solid #000000;
-    border-radius: 12px;
-    padding: 63px 50px 45px 50px;
-    margin-bottom: 25px;
-}
-
-.section1 .top,
-.section1 .bottom {
-    justify-content: space-between;
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.section1 .title {
+    /* text */
     font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
+    font-size: 14px;
+    line-height: 17px;
     display: flex;
     align-items: center;
-    color: #000000;
-    margin-right: 25px;
+    color: #A7A7A7;
+
 }
 
-.section1 .price {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 140%;
+.login .left {
+    display: flex;
+}
+
+.login label {
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
     display: flex;
     align-items: center;
-    color: #98A6B9;
+    color: #25172E;
 }
 
-.section1 button {
-    background: #F2E2D6;
-    border: 1px solid #000000;
-    border-radius: 100px;
-    width: 100%;
-    padding: 14px 20px;
+.login .remember {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 21px;
+}
 
-    /* TEXT */
+.login .forgot {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
-    color: #000000;
+    display: flex;
+    align-items: center;
+    color: #25172E;
 }
 
-.section1 .box-2 {
-    background: #F5F5F5;
-    border: 1px solid #000000;
-    border-radius: 12px;
-    padding: 30px 60px 20px 60px;
-}
-
-.section1 .right img {
-    margin-top: 22px;
-    width: 50%;
-    margin: auto;
+.login button {
     display: flex;
     justify-content: center;
+    background: #C38A8A;
+    border-radius: 16px;
+    width: 100%;
+    padding: 16.5px 0;
+
+    /* Text */
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.login .regis {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #25172E;
+    margin-top: 37px;
+}
+
+.login .regis a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #25172E;
+    text-decoration: none;
 }
 
 
@@ -282,33 +295,6 @@ body {
     margin-top: 24px;
 }
 
-
-@media screen and (max-width: 1400px)and (min-width: 800px) {
-    .section1 .whole {
-        display: block;
-    }
-
-    .section1 .left {
-        margin: auto;
-        width: 40vw;
-        margin-bottom: 50px;
-    }
-
-    .section1 .right {
-        margin: auto;
-    }
-
-    .section1 .box-1 {
-        margin: auto;
-        width: 50vw;
-        margin-bottom: 25px;
-    }
-    
-    .section1 .box-2{
-        margin: auto;
-        width: 50vw;
-    }
-}
 @media screen and (max-width: 800px){
     
     /* NAVBAR */
@@ -333,57 +319,34 @@ body {
         display: block;
         transform:rotate(90deg);
     }
+
+    /* LOGIN  */
+    .login .box{
+        width: 80vw;
+        max-width: 450px;
+    }
+    .login .textinput{
+        width: 85%;
+    }
+    /* .login .remember{
+        display: block;
+    } */
+    .login .forgot{
+        font-size: 13px;
+    }
+    .login button{
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    .login .regis {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .login .regis a{
+        font-size: 12px;
+    }
+
     
-    /* SECTION 1 */
-    .section1 .whole {
-        display: block;
-    }
-
-    .section1 .left {
-        margin: auto;
-        width: 70vw;
-        margin-bottom: 50px;
-        max-width: 400px;
-    }
-    .section1 .left h3{
-        font-size: 24px;
-    }
-
-    .section1 .right {
-        margin: auto;
-    }
-
-    .section1 .box-1 {
-        margin: auto;
-        width: 60vw;
-        margin-bottom: 25px;
-        padding: 30px;
-
-    }
-    .section1 .top{
-        display: block;
-    }
-    .section1 .bottom{
-        display: block;
-    }
-    .section1 button{
-        font-size: 14px;
-        padding: 6px;
-    }
-    
-    .section1 .box-2{
-        margin: auto;
-        width: 60vw;
-        padding: 30px;
-    }
-    .section1 .title, .section1 .price{
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        text-align: center;
-        font-size: 16px;
-    }
-
     /* FOOTER  */
     .footer .bottom {
         display: block;

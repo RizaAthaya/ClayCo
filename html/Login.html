@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="../assets/Circle.svg" type="image/svg+xml">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/About.css">
+    <link rel="stylesheet" href="../css/Login.css">
     <title>Clay Course</title>
 </head>
 
@@ -60,46 +61,29 @@
         burger.addEventListener("click", handleClick);
     </script>
 
-    <!-- SECTION 1 -->
-    <div class="section-1" id="top">
-        <div class="left">
-            <h3 class="subtitle">Preheader Text</h3>
-            <h3 class="title">What is Clay Course?</h3>
-            <h3 class="desc">Clay Course is a flexible learning management system (LMS) template with everything you
-                need to sell video content. Create an entire catalogue or just a single course and sell subscriptions
-                with ease!</h3>
+    <!-- LOGIN  -->
+    <div class="login">
+        <div class="whole">
+            <div class="box">
+                <h3 class="title">Email</h3>
+                <input placeholder="Your Email" type="email" class="textinput">
+                <h3 class="title">Password</h3>
+                <input placeholder="Your Password" type="password" class="textinput">
+                <div class="remember">
+                    <div class="left">
+                        <input type="checkbox">
+                        <label>Remember Me</label>
+                    </div>
+                    <h3 class="forgot">Forgot Password ?</h3>
+                </div>
+                <button type="submit">Login</button>
+                <h3 class="regis">Don't have an account yet? <a href="/html/Register.html"> Register Now !</a></h3>
+            </div>
         </div>
-        <div class="right">
-            <img src="/assets/AboutPict.svg" class="pict">
-        </div>
+
     </div>
 
-    <!-- SECTION 2 -->
-    <div class="section-2">
-        <div class="box">
-            <img class="image" src="../assets/Visi.svg">
-            <h3 class="title">VISI</h3>
-            <h4 class="desc">Clay Course is a flexible learning management system (LMS) template with everything you
-                need to sell video content. Create an entire catalogue or just a single course and sell subscriptions
-                with ease!</h4>
-        </div>
-        <div class="box">
-            <img class="image" src="../assets/Misi.svg">
-            <h3 class="title">Misi</h3>
-            <h4 class="desc">Clay Course is a flexible learning management system (LMS) template with everything you
-                need to sell video content. Create an entire catalogue or just a single course and sell subscriptions
-                with ease!</h4>
-        </div>
-        <div class="box">
-            <img class="image" src="../assets/Tujuan.svg">
-            <h3 class="title">TUJUAN</h3>
-            <h4 class="desc">Clay Course is a flexible learning management system (LMS) template with everything you
-                need to sell video content. Create an entire catalogue or just a single course and sell subscriptions
-                with ease!</h4>
-        </div>
-    </div>
-
-
+    
     <!-- FOOTER -->
     <div class="footer">
         <div class="whole">
@@ -117,6 +101,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 
