@@ -99,6 +99,13 @@ body {
     color: #FFFFFF;
 }
 
+.navbar .profile:hover {
+    background: #f9e4cc;
+    color: #42290E;
+    transition: 0.3s;
+
+}
+
 .navbar .hamburger {
     display: none;
 }
@@ -216,6 +223,14 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-size: 16px;
+
+}
+
+.register button:hover {
+    background: #b97862;
+    border: 2px solid #000000;
+    color: #fff;
 }
 
 .register .ask {

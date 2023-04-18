@@ -98,6 +98,13 @@ body {
     color: #FFFFFF;
 }
 
+.navbar .profile:hover {
+    background: #f9e4cc;
+    color: #42290E;
+    transition: 0.3s;
+
+}
+
 .navbar .hamburger {
     display: none;
 }
@@ -167,7 +174,7 @@ body {
     color: #000000;
 }
 
-.hero .pict{
+.hero .pict {
     width: 80%;
 }
 
@@ -310,7 +317,8 @@ body {
     display: flex;
     margin: auto;
 }
-.section-2 .whole{
+
+.section-2 .whole {
     width: 100vw;
     display: flex;
     margin: auto;
@@ -332,10 +340,11 @@ body {
     width: 50vw;
 }
 
-.section-2 .inputbox{
+.section-2 .inputbox {
     margin: auto;
     width: 50vw;
 }
+
 .section-2 input {
     margin-bottom: 10px;
     color: #fff;
@@ -442,20 +451,24 @@ body {
     .section-2 {
         justify-content: space-around;
     }
-    .section-2 .whole{
+
+    .section-2 .whole {
         width: 100vw;
         justify-content: space-around;
     }
-    .section-2 .left{
+
+    .section-2 .left {
         padding: 0;
         width: 25vw;
         font-size: 35px;
     }
-    .section-2 input{
+
+    .section-2 input {
         width: 100%;
         height: 48px;
     }
-    .section-2 .title{
+
+    .section-2 .title {
         font-size: 16px;
     }
 }
@@ -489,7 +502,8 @@ body {
     /* HERO */
     .hero {
         display: block;
-        padding-top: 150px;
+        padding-top: 130px;
+        padding-bottom: 50px;
     }
 
     .whole-hero {
@@ -507,6 +521,7 @@ body {
     }
 
     .hero .right {
+        margin-top: 25px;
         width: 100%;
     }
 
@@ -572,14 +587,20 @@ body {
         display: block;
         margin: auto;
     }
-    .section-2 .whole{
+
+    .section-2 .whole {
         display: block;
     }
+
     .section-2 .left {
         margin: 0%;
         padding: 0 4vw;
         width: 90vw;
         margin-bottom: 30px;
+    }
+
+    .section-2 .title {
+        font-size: 16px;
     }
 
     .section-2 h3 {
@@ -602,12 +623,20 @@ body {
     }
 
     .section-2 input {
-        width: 90%;
+        width: 92%;
         height: 38px;
     }
 
+    .section-2 .btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .section-2 button {
-        font-size: 18px;
+        font-size: 16px;
+        padding: 16px 20px;
+        width: auto;
+        height: auto;
     }
 
     /* FOOTER  */

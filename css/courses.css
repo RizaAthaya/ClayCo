@@ -98,6 +98,13 @@ body {
     color: #FFFFFF;
 }
 
+.navbar .profile:hover {
+    background: #f9e4cc;
+    color: #42290E;
+    transition: 0.3s;
+
+}
+
 .navbar .hamburger {
     display: none;
 }
@@ -451,6 +458,7 @@ body {
     }
 
     .section-2 .pict {
+        margin-top: 25px;
         width: 90%;
     }
 

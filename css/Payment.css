@@ -99,6 +99,13 @@ body {
     color: #FFFFFF;
 }
 
+.navbar .profile:hover {
+    background: #f9e4cc;
+    color: #42290E;
+    transition: 0.3s;
+
+}
+
 .navbar .hamburger {
     display: none;
 }
@@ -352,6 +359,11 @@ body {
         margin: auto;
         width: 50vw;
     }
+
+    /* POPUP  */
+    .popup .title {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -378,6 +390,11 @@ body {
         transform-origin: top left;
         display: block;
         transform: rotate(90deg);
+    }
+
+    /* POP UP  */
+    .popup .title {
+        font-size: 18px;
     }
 
     /* SECTION 1 */

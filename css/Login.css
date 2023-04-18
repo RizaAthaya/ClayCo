@@ -99,6 +99,13 @@ body {
     color: #FFFFFF;
 }
 
+.navbar .profile:hover {
+    background: #f9e4cc;
+    color: #42290E;
+    transition: 0.3s;
+
+}
+
 .navbar .hamburger {
     display: none;
 }
@@ -141,10 +148,11 @@ body {
     align-items: center;
 }
 
-.login .whole{
+.login .whole {
     padding-top: 150px;
     padding-bottom: 50px;
 }
+
 .login .box {
     box-shadow: 50px;
     width: 546px;
@@ -231,6 +239,13 @@ body {
     color: #FFFFFF;
 }
 
+.login button:hover {
+    background: #ab7676;
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
 .login .regis {
     text-align: center;
     font-weight: 400;
@@ -296,8 +311,8 @@ body {
     margin-top: 24px;
 }
 
-@media screen and (max-width: 800px){
-    
+@media screen and (max-width: 800px) {
+
     /* NAVBAR */
     .navbar .left {
         margin-left: 5vw;
@@ -315,39 +330,45 @@ body {
         display: block;
         margin-right: 5vw;
     }
-    .navbar .hamburger2{
-        transform-origin: top left; 
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
         display: block;
-        transform:rotate(90deg);
+        transform: rotate(90deg);
     }
 
     /* LOGIN  */
-    .login .box{
+    .login .box {
         width: 80vw;
         max-width: 450px;
     }
-    .login .textinput{
+
+    .login .textinput {
         width: 85%;
     }
+
     /* .login .remember{
         display: block;
     } */
-    .login .forgot{
+    .login .forgot {
         font-size: 13px;
     }
-    .login button{
+
+    .login button {
         font-size: 12px;
         padding: 6px 0;
     }
+
     .login .regis {
         font-size: 12px;
         margin-top: 15px;
     }
-    .login .regis a{
+
+    .login .regis a {
         font-size: 12px;
     }
 
-    
+
     /* FOOTER  */
     .footer .bottom {
         display: block;
