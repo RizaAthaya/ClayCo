@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap");
+
+* {
+    font-family: "Sora";
+    margin: 0%;
+    padding: 0%;
+    /* width: 100vw; */
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100vw;
+}
+
+
+/* NAVBAR */
+.navbar {
+    z-index: 999999999;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    align-items: center;
+    background-color: #A9907E;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 30px; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0%;
+}
+
+
+.navbar ul li a {
+    margin: 20px 26px;
+
+    /* text */
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.navbar ul li a::after {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #f9e4cc;
+    text-decoration: none;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.navbar .left {
+    margin: 29px 0;
+    margin-left: 80px;
+}
+
+.navbar .right {
+    margin: 14px 0;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    background: #42290E;
+    border-radius: 100px;
+    margin-right: 80px;
+
+    /* text */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+
+.navbar .dropdownHid {
+    display: none;
+}
+
+.navbar .dropdown {
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 3vw;
+    display: block;
+    width: 180px;
+    height: auto;
+    background-color: #5b4732;
+}
+
+.navbar .dropdown ul {
+    list-style: none;
+    display: block;
+}
+
+.navbar .dropdown ul li {
+    display: block;
+}
+
+.navbar .dropdown ul li a {
+    color: #fff;
+}
+
+/* REGISTER  */
+.register {
+    width: 100vw;
+    min-height: 85vh;
+    align-items: center;
+}
+
+.register .whole {
+    min-height: 85vh;
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.register .box {
+    max-width: 431px;
+}
+
+.register .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.register .subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #25172E;
+    margin-bottom: 18px;
+}
+
+.register input {
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 94%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 3%;
+
+    /* TEXT */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6C757D;
+}
+
+.register .desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #6C757D;
+    margin-bottom: 10px;
+}
+
+.register button {
+    background: #C88E7A;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.register .ask {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3D3D3D;
+    margin: 32px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.register .addition span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #3D3D3D;
+}
+
+.register .ask a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #3D3D3D;
+}
+
+.register .addition {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3D3D3D;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+.footer {
+    background: #A97E88;
+    text-align: center;
+    width: 100vw;
+}
+
+.footer .whole {
+    padding: 30px 80px 40px 80px;
+}
+
+.footer .title {
+    font-weight: 700;
+    font-size: 38.5146px;
+    line-height: 120%;
+    color: #42290E;
+}
+
+.footer .desc a {
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    align-items: center;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 800px) {
+
+    /* NAVBAR */
+    .navbar .left {
+        margin-left: 5vw;
+    }
+
+    .navbar .center {
+        display: none;
+    }
+
+    .navbar .right {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
+        display: block;
+        transform: rotate(90deg);
+    }
+
+    /* REGISTER  */
+
+    .register .box {
+        width: 80vw;
+    }
+
+    .register .desc {
+        font-size: 12px;
+    }
+
+    .register .ask {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    .register hr {
+        margin-bottom: 15px;
+    }
+
+    .register .addition {
+        font-size: 10px;
+        margin: 0%;
+    }
+
+    .register .addition span {
+        font-size: 10px;
+    }
+
+
+    /* FOOTER  */
+    .footer .bottom {
+        display: block;
+    }
+
+    .footer .text {
+        margin-bottom: 10px;
+    }
+}
