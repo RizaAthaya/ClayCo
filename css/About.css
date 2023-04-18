@@ -144,7 +144,7 @@ body {
   width: 100vw;
   height: auto;
   display: flex;
-  background: #f3deba;
+  background: linear-gradient(180deg, #6A503D 0%, rgba(217, 217, 217, 0) 100%);
 }
 
 .section-1 .left {
@@ -196,6 +196,7 @@ body {
   align-items: center;
   margin: auto;
   padding-bottom: 50px;
+  background: #F3DEBA;
 }
 
 .section-2 .box {
@@ -233,7 +234,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #A97E88;
+  /* background: #A97E88; */
   text-align: center;
   width: 100vw;
 }

@@ -139,7 +139,7 @@ body {
 .section1 {
     width: 100vw;
     height: auto;
-    background-color: #F2E2D6;
+    /* background-color: #F2E2D6; */
     padding: 100px 0px 51px 0px;
 }
 
@@ -241,6 +241,8 @@ body {
 .section2 {
     width: 100vw;
     height: auto;
+    background: #F2E2D6;
+    padding: 20px 0;
 }
 
 .section2 .whole {
@@ -284,7 +286,10 @@ body {
     padding: 24px;
     width: 400px;
     height: auto;
+    /* background: linear-gradient(0deg, #F2E2D6, #F2E2D6), linear-gradient(0deg, #0E2D58, #0E2D58), #102542;
+    border-radius: 12px; */
     background: linear-gradient(0deg, #F2E2D6, #F2E2D6), linear-gradient(0deg, #0E2D58, #0E2D58), #102542;
+    border: 2px solid #000000;
     border-radius: 12px;
 }
 
@@ -310,7 +315,7 @@ body {
 
 /* FOOTER */
 .footer {
-    background: #A97E88;
+    /* background: #A97E88; */
     text-align: center;
     width: 100vw;
 }

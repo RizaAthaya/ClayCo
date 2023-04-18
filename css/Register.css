@@ -154,6 +154,7 @@ body {
     justify-content: center;
     margin: auto;
     align-items: center;
+    background: #F3DEBA;
 }
 
 .register .box {
@@ -284,9 +285,13 @@ body {
     margin-bottom: 5px;
 }
 
+.register hr {
+    margin-bottom: 15px;
+}
+
 /* FOOTER */
 .footer {
-    background: #A97E88;
+    /* background: #A97E88; */
     text-align: center;
     width: 100vw;
 }
@@ -364,10 +369,6 @@ body {
     .register .ask {
         margin: 20px 0;
         font-size: 14px;
-    }
-
-    .register hr {
-        margin-bottom: 15px;
     }
 
     .register .addition {

@@ -144,7 +144,7 @@ body {
     display: flex;
     width: 100vw;
     height: auto;
-    background: #f3deba;
+    background: linear-gradient(180deg, #6A503D 0%, rgba(217, 217, 217, 0) 100%);
 }
 
 .whole-hero {
@@ -185,6 +185,7 @@ body {
     padding: 100px 0 50px 0;
     display: flex;
     height: auto;
+    min-height: 300px;
 }
 
 .section-1 .left {
@@ -316,7 +317,9 @@ body {
     justify-content: space-between;
     display: flex;
     margin: auto;
+    background: #F2E2D6;
 }
+
 
 .section-2 .whole {
     width: 100vw;
@@ -382,7 +385,7 @@ body {
 
 /* FOOTER */
 .footer {
-    background: #A97E88;
+    /* background: #A97E88; */
     text-align: center;
     width: 100vw;
 }
