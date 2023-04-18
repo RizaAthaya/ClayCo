@@ -101,10 +101,12 @@ body {
 .navbar .hamburger {
     display: none;
 }
-.navbar .dropdownHid{
+
+.navbar .dropdownHid {
     display: none;
 }
-.navbar .dropdown{
+
+.navbar .dropdown {
     color: #fff;
     position: absolute;
     top: 60px;
@@ -114,17 +116,19 @@ body {
     height: auto;
     background-color: #5b4732;
 }
+
 .navbar .dropdown ul {
     list-style: none;
     display: block;
 }
-.navbar .dropdown ul li{
+
+.navbar .dropdown ul li {
     display: block;
 }
-.navbar .dropdown ul li a{
+
+.navbar .dropdown ul li a {
     color: #fff;
 }
-
 
 /* SECTION 2 */
 
@@ -176,7 +180,7 @@ body {
     width: 40vw;
 }
 
-.section-2 .pict{
+.section-2 .pict {
     width: 35vw;
     margin: 0;
 }
@@ -204,14 +208,14 @@ body {
 
 .section-3 .atas {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 135px;
     padding-top: 69px;
 }
 
 .section-3 .bawah {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 135px;
 }
 
@@ -264,7 +268,7 @@ body {
     color: #000000;
 }
 
-.section-3 a{
+.section-3 a {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -327,29 +331,33 @@ body {
 }
 
 @media screen and (max-width: 1300px) and (min-width: 800px) {
+
     /* SECTION 2 */
-    .section-2 .whole{
+    .section-2 .whole {
         display: block;
         padding-left: 5vw;
         padding-right: 5vw;
         padding-bottom: 20px;
     }
-    .section-2 .left{
+
+    .section-2 .left {
         width: 80vw;
     }
-    .section-2 .right{
+
+    .section-2 .right {
         width: 80vw;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
     }
-    .section-2 .pict{
+
+    .section-2 .pict {
         margin-top: 35px;
         width: 80%;
     }
 
-    
+
     /* SECTION 3 */
     .section-3 .atas {
         display: block;
@@ -411,25 +419,29 @@ body {
         display: block;
         margin-right: 5vw;
     }
-    .navbar .hamburger2{
-        transform-origin: top left; 
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
         display: block;
-        transform:rotate(90deg);
+        transform: rotate(90deg);
     }
 
     /* SECTION 2 */
     .section-2 {
         display: block;
     }
-    .section-2 .whole{
+
+    .section-2 .whole {
         /* padding-left: 5vw;
         padding-right: 5vw; */
         padding-bottom: 10px;
     }
-    .section-2 .left{
+
+    .section-2 .left {
         padding-left: 5vw;
     }
-    .section-2 .right{
+
+    .section-2 .right {
         width: 90vw;
         padding-top: 20px;
         display: flex;
@@ -437,7 +449,8 @@ body {
         justify-content: center;
         margin: auto;
     }
-    .section-2 .pict{
+
+    .section-2 .pict {
         width: 90%;
     }
 

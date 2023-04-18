@@ -138,6 +138,7 @@ body {
     background: #F3DEBA;
     margin: auto;
     min-height: 50vw;
+    align-items: center;
 }
 
 .login .whole{

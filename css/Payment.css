@@ -131,6 +131,50 @@ body {
     color: #fff;
 }
 
+
+/* POP UP */
+.hide {
+    display: none;
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    padding: 24px 0;
+    background: #C88E7A;
+    border: 1px solid #000000;
+    border-radius: 22px;
+    width: 80vw;
+    max-width: 651px;
+    max-height: 501px;
+}
+
+.popup .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.popup img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+
 /* SECTION 1 */
 .section1 {
     background: #F2E2D6;
@@ -303,14 +347,15 @@ body {
         width: 50vw;
         margin-bottom: 25px;
     }
-    
-    .section1 .box-2{
+
+    .section1 .box-2 {
         margin: auto;
         width: 50vw;
     }
 }
-@media screen and (max-width: 800px){
-    
+
+@media screen and (max-width: 800px) {
+
     /* NAVBAR */
     .navbar .left {
         margin-left: 5vw;
@@ -328,12 +373,13 @@ body {
         display: block;
         margin-right: 5vw;
     }
-    .navbar .hamburger2{
-        transform-origin: top left; 
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
         display: block;
-        transform:rotate(90deg);
+        transform: rotate(90deg);
     }
-    
+
     /* SECTION 1 */
     .section1 .whole {
         display: block;
@@ -345,7 +391,8 @@ body {
         margin-bottom: 50px;
         max-width: 400px;
     }
-    .section1 .left h3{
+
+    .section1 .left h3 {
         font-size: 24px;
     }
 
@@ -360,23 +407,28 @@ body {
         padding: 30px;
 
     }
-    .section1 .top{
+
+    .section1 .top {
         display: block;
     }
-    .section1 .bottom{
+
+    .section1 .bottom {
         display: block;
     }
-    .section1 button{
+
+    .section1 button {
         font-size: 14px;
         padding: 6px;
     }
-    
-    .section1 .box-2{
+
+    .section1 .box-2 {
         margin: auto;
         width: 60vw;
         padding: 30px;
     }
-    .section1 .title, .section1 .price{
+
+    .section1 .title,
+    .section1 .price {
         display: flex;
         justify-content: center;
         margin: auto;
