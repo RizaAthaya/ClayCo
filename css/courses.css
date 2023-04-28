@@ -401,6 +401,7 @@ body {
         max-width: 600px;
         margin-bottom: 50px;
         height: auto;
+        padding-bottom: 13px;
     }
 
     .section-3 .name {
