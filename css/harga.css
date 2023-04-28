@@ -148,6 +148,7 @@ body {
 }
 
 .section1 .title {
+    text-align: center;
     margin: 58px 0;
     font-weight: 700;
     font-size: 44px;
@@ -212,6 +213,7 @@ body {
 }
 
 .section1 hr {
+    border-color: #42290E;
     margin: 32px 0;
     opacity: 0.5;
 }
@@ -221,6 +223,7 @@ body {
     font-size: 18px;
     line-height: 140%;
     color: #000000;
+
 }
 
 .section1 button {
@@ -305,10 +308,11 @@ body {
     margin-bottom: 8px;
 }
 
-.section2 .desc a {
+.section2 .desc {
+    /* font */
     font-weight: 300;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 120%;
     color: #000000;
     opacity: 0.9;
 }
@@ -341,9 +345,27 @@ body {
     margin-top: 30px;
 }
 
+.footer .kontak {
+    /* display: flex; */
+    margin: 0;
+    float: right;
+    font-weight: 700;
+    font-size: 22.5px;
+    line-height: 120%;
+    color: #000000;
+    padding-right: 30px;
+}
+
+.footer .kontak.hid {
+    display: none;
+}
+
 .footer .bottom {
+    margin-top: 15px;
     display: flex;
+    /* flex-direction: row; */
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer .text {
@@ -469,6 +491,19 @@ body {
     .footer .text {
         margin-bottom: 10px;
     }
+
+    .footer .kontak.show {
+        display: none;
+    }
+
+    .footer .kontak.hid {
+        padding: 0%;
+        text-align: center;
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -575,6 +610,19 @@ body {
 
     .footer .text {
         margin-bottom: 10px;
+    }
+
+    .footer .kontak.show {
+        display: none;
+    }
+
+    .footer .kontak.hid {
+        padding: 0%;
+        text-align: center;
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 17px;
     }
 
 }

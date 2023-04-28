@@ -141,15 +141,15 @@ body {
 /* REGISTER  */
 .register {
     width: 100vw;
-    min-height: 85vh;
+    /* min-height: 100vh; */
     align-items: center;
 }
 
 .register .whole {
-    min-height: 85vh;
+    min-height: 100vh;
     height: 100%;
-    padding-top: 130px;
-    padding-bottom: 50px;
+    /* padding-top: 30px; */
+    /* padding-bottom: 50px; */
     display: flex;
     justify-content: center;
     margin: auto;
@@ -215,6 +215,11 @@ body {
     margin-bottom: 10px;
 }
 
+.register a {
+    text-decoration: none;
+
+}
+
 .register button {
     background: #C88E7A;
     border: 1px solid #000000;
@@ -225,7 +230,7 @@ body {
     justify-content: center;
     margin-top: 20px;
     font-size: 16px;
-
+    text-decoration: none;
 }
 
 .register button:hover {
@@ -259,14 +264,14 @@ body {
 }
 
 .register .ask a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
     display: flex;
     align-items: center;
     text-align: center;
-    text-decoration-line: underline;
     color: #3D3D3D;
+
 }
 
 .register .addition {
@@ -317,9 +322,27 @@ body {
     margin-top: 30px;
 }
 
+.footer .kontak {
+    /* display: flex; */
+    margin: 0;
+    float: right;
+    font-weight: 700;
+    font-size: 22.5px;
+    line-height: 120%;
+    color: #000000;
+    padding-right: 30px;
+}
+
+.footer .kontak.hid {
+    display: none;
+}
+
 .footer .bottom {
+    margin-top: 15px;
     display: flex;
+    /* flex-direction: row; */
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer .text {
@@ -388,5 +411,18 @@ body {
 
     .footer .text {
         margin-bottom: 10px;
+    }
+
+    .footer .kontak.show {
+        display: none;
+    }
+
+    .footer .kontak.hid {
+        padding: 0%;
+        text-align: center;
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 17px;
     }
 }
