@@ -358,6 +358,16 @@ body {
     background: #000000;
     border-radius: 100px;
 }
+.section-2 textarea{
+    padding: 2px 16px;
+    margin-bottom: 10px;
+    color: #fff;
+    align-items: flex-start;
+    width: 43vw;
+    height: 78px;
+    background: #000000;
+    border-radius: 28px;
+}
 
 .section-2 button {
     margin-top: 20px;
