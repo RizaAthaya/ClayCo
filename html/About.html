@@ -16,7 +16,7 @@
         <div class="center">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
                 <li> <a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
             </ul>
@@ -30,7 +30,7 @@
         <div class="dropdownHid" id="DDb">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
                 <li> <a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
                 <li><a href="/html/Login.html"><span class="span"
@@ -66,7 +66,7 @@
     <!-- SECTION 1 -->
     <div class="section-1" id="top">
         <div class="left">
-            <h3 class="subtitle">Preheader Text</h3>
+            <h3 class="subtitle">Grow Your Skill with Clay Course</h3>
             <h3 class="title">What is Clay Course?</h3>
             <h3 class="desc">Clay course is an online class to develop skills using clay. On this website there will be
                 a registration form to take part in the CL.CO class, purchase of tools and materials, as well as a short
@@ -124,6 +124,10 @@
             </div>
         </div>
     </div>
+    <script>
+        const linkNav = document.getElementById("coursepage");
+        linkNav.href = `/html/Courses.html?course=${course}`;
+    </script>
 </body>
 
 </html>

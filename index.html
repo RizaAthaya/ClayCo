@@ -17,7 +17,7 @@
         <div class="center">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
                 <li> <a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
             </ul>
@@ -72,15 +72,15 @@
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                     checked="checked">
                 <div class="carousel-item">
-                    <img src="../assets/carousel1.svg">
+                    <img src="../assets/hero-1.png">
                 </div>
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item">
-                    <img src="../assets/carousel2.svg">
+                    <img src="../assets/hero-2.png">
                 </div>
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item">
-                    <img src="../assets/carousel1.svg">
+                    <img src="../assets/hero-3.png">
                 </div>
                 <label for="carousel-3" class="carousel-control prev control-1">‹</label>
                 <label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -107,11 +107,11 @@
     <!-- SECTION 2 -->
     <div class="section-2">
         <div class="left">
-            <img src="/assets/homeee2.png" class="pict">
+            <img src="/assets/home.png" class="pict">
         </div>
         <div class="right">
             <div class="box">
-                <img class="pict1" src="../assets/homeee.png">
+                <img class="pict1" src="../assets/simpleClay.png">
                 <img class="icon1" src="../assets/icon/icon1.svg">
                 <div class="text">
                     <h3 class="text1">How to Make Simple Clay </h3>
@@ -119,19 +119,19 @@
                 </div>
             </div>
             <div class="box">
-                <img class="pict1" src="../assets/homeee.png">
+                <img class="pict1" src="../assets/Keramik.png">
                 <img class="icon1" src="../assets/icon/icon1.svg">
                 <div class="text">
-                    <h3 class="text1">Making a ceramic glass</h3>
+                    <h3 class="text1">Making a Ceramic Glass</h3>
                     <h4 class="text2">This video is likely to appeal to those who are interested in pottery and
                         ceramics.</h4>
                 </div>
             </div>
             <div class="box">
-                <img class="pict1" src="../assets/homeee.png">
+                <img class="pict1" src="../assets/KeramikArts.png">
                 <img class="icon1" src="../assets/icon/icon1.svg">
                 <div class="text">
-                    <h3 class="text1">Ceramic arts for beginner</h3>
+                    <h3 class="text1">Ceramic Arts for Beginner</h3>
                     <h4 class="text2">This video is perfect for those who are new to ceramics and want to learn the
                         basic techniques and skills required to create beautiful ceramic pieces.
                     </h4>
@@ -161,7 +161,10 @@
             </div>
         </div>
     </div>
-
+    <script>
+        const linkNav = document.getElementById("coursepage");
+        linkNav.href = `/html/Courses.html?course=${course}`;
+    </script>
 </body>
 
 </html>

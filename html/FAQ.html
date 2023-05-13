@@ -17,7 +17,7 @@
         <div class="center">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
                 <li> <a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
             </ul>
@@ -31,7 +31,7 @@
         <div class="dropdownHid" id="DDb">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
                 <li> <a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
                 <li><a href="/html/Login.html"><span class="span"
@@ -68,11 +68,11 @@
     <div class="hero" id="top">
         <div class="whole-hero">
             <div class="left">
-                <h3>Have Questions ?
+                <h3>Have Questions?
                     We’ve got you.</h3>
             </div>
             <div class="right">
-                <img src="/assets/FAQPict.svg" class="pict">
+                <img src="/assets/faq.png" class="pict">
             </div>
         </div>
     </div>
@@ -123,7 +123,7 @@
                     <img src="../assets/icon/Tambah.svg">
                 </div>
                 <h3 id="myDesc2" class="hidden2">No, the tools that have been sent are not our responsibility anymore.
-                    If there is damages it is the responsibility of the courier</h3>
+                    If there is damages it is the responsibility of the courier.</h3>
             </div>
             <script>
                 // Mendapatkan elemen heading berdasarkan id
@@ -157,7 +157,7 @@
                     <img src="../assets/icon/Tambah.svg">
                 </div>
                 <h3 id="myDesc3" class="hidden5">To join the class click on the navigation courses button then enroll
-                    the class that you want and do the payment</h3>
+                    the class that you want and do the payment.</h3>
             </div>
             <script>
                 // Mendapatkan elemen heading berdasarkan id
@@ -189,8 +189,8 @@
     <div class="section-2">
         <div class="whole">
             <div class="left">
-                <h3>Drop You 
-                    Questions Here </h3>
+                <h3>Still Have Questions?
+                    Drop Here </h3>
             </div>
             <div class="right">
                 <form>
@@ -239,6 +239,11 @@
             </div>
         </div>
     </div>
+    <script>
+        const linkNav = document.getElementById("coursepage");
+        linkNav.href = `/html/Courses.html?course=${course}`;
+    </script>
 </body>
+
 
 </html>

@@ -17,8 +17,8 @@
         <div class="center">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
-                <li> <a href="/html/FAQ.html">FAQ</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
+                <li><a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
             </ul>
         </div>
@@ -31,8 +31,8 @@
         <div class="dropdownHid" id="DDb">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
-                <li> <a href="/html/FAQ.html">FAQ</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
+                <li><a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
                 <li><a href="/html/Login.html"><span class="span"
                             style="font-size: 16px; background-color: #a98484; width: 100%; text-align: center; border-radius: 10px;">Profile</span></a>
@@ -115,7 +115,7 @@
                 popup.classList.remove("hide");
                 popup.classList.add("blur");
                 setTimeout(function () {
-                    window.location.href = '/html/CoursesPaid.html'; // Change to the desired URL
+                    window.location.href = `/html/Courses.html?course=${course}`; // Change to the desired URL
                 }, 2500);
             } else {
                 popup.classList.remove("blur");
@@ -146,6 +146,18 @@
             </div>
         </div>
     </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const course = urlParams.get('course');
+        localStorage.setItem("course", course);
+        
+        const linkNav = document.getElementById("coursepage");
+        linkNav.href = `/html/Courses.html?course=${course}`;
+
+        const linkConfirm = document.getElementById("confirm");
+        linkConfirm.href = `/html/Courses.html?course=${course}`;
+        
+    </script>
 </body>
 
 </html>

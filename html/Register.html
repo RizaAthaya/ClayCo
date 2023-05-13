@@ -17,8 +17,8 @@
         <div class="center">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
-                <li> <a href="/html/FAQ.html">FAQ</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
+                <li><a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
             </ul>
         </div>
@@ -31,8 +31,8 @@
         <div class="dropdownHid" id="DDb">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/html/Courses.html">Courses</a></li>
-                <li> <a href="/html/FAQ.html">FAQ</a></li>
+                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
+                <li><a href="/html/FAQ.html">FAQ</a></li>
                 <li><a href="/html/About.html">About Us</a></li>
                 <li><a href="/html/Login.html"><span class="span"
                             style="font-size: 16px; background-color: #a98484; width: 100%; text-align: center; border-radius: 10px;">Profile</span></a>
@@ -89,7 +89,7 @@
                 <hr>
                 <h3 class="addition">Dengan melakukan pendaftaran, Anda setuju dengan </h3>
                 <h3 class="addition">&nbsp;<span> syarat & ketentuan </span>&nbsp;
-                    CourseKit.</h3>
+                    Clay Course.</h3>
             </div>
         </div>
     </div>
@@ -114,6 +114,10 @@
             </div>
         </div>
     </div>
+    <script>
+        const linkNav = document.getElementById("coursepage");
+        linkNav.href = `/html/Courses.html?course=${course}`;
+    </script>
 </body>
 
 </html>

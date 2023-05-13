@@ -142,6 +142,7 @@ body {
   min-height: 50vw;
   align-items: center;
   width: 100vw;
+  min-height: 100vh;
   height: auto;
   display: flex;
   background: linear-gradient(180deg, #6A503D 0%, rgba(217, 217, 217, 0) 100%);
