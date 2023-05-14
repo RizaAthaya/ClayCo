@@ -155,6 +155,7 @@ body {
     margin: auto;
     align-items: center;
     background: #F3DEBA;
+    padding-top: 25px;
 }
 
 .register .box {
@@ -353,6 +354,26 @@ body {
     margin-top: 24px;
 }
 
+
+@media screen and (max-width: 1400px)and (min-width: 800px) {
+    /* REGISTER */
+    .register .whole {
+        padding-top: 100px;
+    }
+    /* FOOTER */
+    .footer .desc {
+        margin-bottom: 15px;
+    }
+
+    .footer .text {
+        margin-top: 0;
+    }
+
+    .footer .kontak.show {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     /* NAVBAR */
@@ -380,6 +401,9 @@ body {
     }
 
     /* REGISTER  */
+    .register .whole {
+        padding-top: 100px;
+    }
 
     .register .box {
         width: 80vw;

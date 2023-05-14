@@ -80,7 +80,8 @@
                     </div>
                     <hr>
                     <h3 class="desc">This package offers the provision of clay handicraft training tools.</h3>
-                    <a id="paymentpage" href="/html/Payment.html?course=1"><button>Buy Now</button></a>
+                    <a id="paymentpage1" href="/html/Payment.html?course=1"><button>Buy Now</button></a>
+                    <!-- /html/Harga.html?course=3 -->
                 </div>
                 <div class="box">
                     <div class="atas">
@@ -94,7 +95,7 @@
                     <hr>
                     <h3 class="desc">If you want a minimalist class, you can choose a package that is without tools.
                     </h3>
-                    <a id="paymentpage" href="/html/Payment.html"><button>Buy Now</button></a>
+                    <a id="paymentpage2" href="/html/Payment.html"><button>Buy Now</button></a>
                 </div>
             </div>
         </div>
@@ -184,9 +185,13 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const course = urlParams.get('course');
+        localStorage.setItem("course", course);
 
-        const linkElement = document.getElementById("paymentpage");
-        linkElement.href = `/html/Payment.html?course=${course}`;
+        const linkElement1 = document.getElementById("paymentpage1");
+        linkElement1.href = `/html/Payment.html?course=${course}&tools=1`;
+
+        const linkElement2 = document.getElementById("paymentpage2");
+        linkElement2.href = `/html/Payment.html?course=${course}&tools=2`;
 
         const linkNav = document.getElementById("coursepage");
         linkNav.href = `/html/Courses.html?course=${course}`;

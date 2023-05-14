@@ -430,6 +430,19 @@ body {
         padding-left: 7vw;
     }
 
+    /* FOOTER */
+    .footer .desc {
+        margin-bottom: 15px;
+    }
+
+    .footer .text {
+        margin-top: 0;
+    }
+
+    .footer .kontak.show {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -566,9 +579,10 @@ body {
         width: 100%;
         height: 100%;
     }
-     /* CAROUSEL  */
 
-     .carousel-item img {
+    /* CAROUSEL  */
+
+    .carousel-item img {
         height: 200px;
     }
 
@@ -589,7 +603,8 @@ body {
         height: auto;
         padding-bottom: 50px;
     }
-    .section-2 .text1{
+
+    .section-2 .text1 {
         padding-top: 0px;
     }
 

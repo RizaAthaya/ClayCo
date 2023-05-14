@@ -85,11 +85,11 @@
                     <div class="box-1">
                         <div class="top">
                             <h3 class="title">Harga Kelas dengan Tools</h3>
-                            <h3 class="price">Rp 2.000.000</h3>
+                            <h3 id="thePrice" class="price">Rp 2.500.000</h3>
                         </div>
                         <div class="bottom">
                             <h3 class="title">Total Pembayaran</h3>
-                            <h3 class="price">Rp 2.000.000</h3>
+                            <h3 id="theTotal" class="price">Rp 2.500.000</h3>
                         </div>
                         <button id="confirm">Confirm Payment</button>
                     </div>
@@ -149,14 +149,26 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const course = urlParams.get('course');
-        localStorage.setItem("course", course);
-        
+        const tools = urlParams.get('tools');
+        console.log(course)
+        console.log(tools)
+
+        const valuePrice = document.getElementById("thePrice");
+        const totalPrice = document.getElementById("theTotal");
+        if (tools === '1') {
+            valuePrice.innerHTML = "Rp 2.500.000"
+            totalPrice.innerHTML = "Rp 2.500.000"
+        } else if (tools === '2') {
+            valuePrice.innerHTML = "Rp 1.000.000"
+            totalPrice.innerHTML = "Rp 1.000.000"
+        }
+
         const linkNav = document.getElementById("coursepage");
         linkNav.href = `/html/Courses.html?course=${course}`;
 
         const linkConfirm = document.getElementById("confirm");
         linkConfirm.href = `/html/Courses.html?course=${course}`;
-        
+
     </script>
 </body>
 

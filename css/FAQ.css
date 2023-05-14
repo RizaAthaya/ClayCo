@@ -358,7 +358,8 @@ body {
     background: #000000;
     border-radius: 100px;
 }
-.section-2 textarea{
+
+.section-2 textarea {
     padding: 2px 16px;
     margin-bottom: 10px;
     color: #fff;
@@ -470,12 +471,14 @@ body {
         width: 100%;
     }
 
-    .hero h3 {
-        font-size: 35px;
+    .hero .right {
+        margin-top: 45px;
+        width: 100%;
     }
 
-    .hero .right {
-        width: 100%;
+    /* SECTION 1 */
+    .section-1 .main {
+        font-size: 35px;
     }
 
     /* SECTION 2 */
@@ -495,12 +498,25 @@ body {
     }
 
     .section-2 input {
-        width: 100%;
+        width: 85%;
         height: 48px;
     }
 
     .section-2 .title {
         font-size: 16px;
+    }
+
+    /* FOOTER */
+    .footer .desc {
+        margin-bottom: 15px;
+    }
+
+    .footer .text {
+        margin-top: 0;
+    }
+
+    .footer .kontak.show {
+        display: none;
     }
 }
 
@@ -668,6 +684,10 @@ body {
         padding: 16px 20px;
         width: auto;
         height: auto;
+    }
+
+    .section-2 textarea{
+        width: 90%;
     }
 
     /* FOOTER  */

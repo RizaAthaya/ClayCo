@@ -391,6 +391,19 @@ body {
     .popup .title {
         font-size: 30px;
     }
+
+    /* FOOTER */
+    .footer .desc {
+        margin-bottom: 15px;
+    }
+
+    .footer .text {
+        margin-top: 0;
+    }
+
+    .footer .kontak.show {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {

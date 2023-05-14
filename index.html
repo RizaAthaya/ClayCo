@@ -162,6 +162,9 @@
         </div>
     </div>
     <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const course = urlParams.get('course');
+
         const linkNav = document.getElementById("coursepage");
         linkNav.href = `/html/Courses.html?course=${course}`;
     </script>

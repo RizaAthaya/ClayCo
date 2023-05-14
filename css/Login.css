@@ -340,6 +340,21 @@ body {
     /* margin-top: 24px; */
 }
 
+
+@media screen and (max-width: 1400px)and (min-width: 800px) {
+    /* FOOTER */
+    .footer .desc{
+        margin-bottom: 15px;
+    }
+    .footer .text {
+        margin-top: 0;
+    }
+
+    .footer .kontak.show {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     /* NAVBAR */
