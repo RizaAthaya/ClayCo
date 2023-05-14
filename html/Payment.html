@@ -84,7 +84,7 @@
                 <div class="semua-box">
                     <div class="box-1">
                         <div class="top">
-                            <h3 class="title">Harga Kelas dengan Tools</h3>
+                            <h3 id="textPrice" class="title">Class prices with tools</h3>
                             <h3 id="thePrice" class="price">Rp 2.500.000</h3>
                         </div>
                         <div class="bottom">
@@ -153,14 +153,17 @@
         console.log(course)
         console.log(tools)
 
+        const textPrice = document.getElementById("textPrice")
         const valuePrice = document.getElementById("thePrice");
         const totalPrice = document.getElementById("theTotal");
         if (tools === '1') {
             valuePrice.innerHTML = "Rp 2.500.000"
             totalPrice.innerHTML = "Rp 2.500.000"
+            textPrice.innerHTML= "Class Prices with Tools"
         } else if (tools === '2') {
             valuePrice.innerHTML = "Rp 1.000.000"
             totalPrice.innerHTML = "Rp 1.000.000"
+            textPrice.innerHTML= "Class Prices without Tools"
         }
 
         const linkNav = document.getElementById("coursepage");
