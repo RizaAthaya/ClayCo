@@ -16,6 +16,7 @@ body {
     max-width: 100vw;
 }
 
+/* NAVBAR */
 .navbar {
     z-index: 999999999;
     width: 100vw;
@@ -29,14 +30,30 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 
-.navbar ul {
+.navbar .whole {
+    width: 100vw;
+    padding: 0 8.3vw;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .center {
+    width: 30vw;
+}
+
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
     list-style: none;
     margin: 0%;
 }
 
 .navbar ul li a {
-    margin: 20px 26px;
+    margin: 20px 0px;
 
     /* text */
     font-weight: 700;
@@ -73,20 +90,21 @@ body {
 
 .navbar .left {
     margin: 29px 0;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
+/* 
 .navbar .right {
-    margin: 14px 0;
-}
+    /* margin: 14px 0; */
+/* } */
 
 .navbar .profile {
     display: flex;
     align-items: center;
-    padding: 14px 20px;
+    padding: 14px 24px;
     background: #42290E;
     border-radius: 100px;
-    margin-right: 80px;
+    /* margin-right: 80px; */
 
     /* text */
     font-weight: 700;
@@ -94,6 +112,7 @@ body {
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .navbar .profile:hover {
@@ -120,9 +139,10 @@ body {
     top: 60px;
     right: 5vw;
     display: block;
-    width: 180px;
+    width: 130px;
     height: auto;
     background-color: #5b4732;
+    padding:  0 5vw;
 }
 
 .navbar .dropdown ul {
@@ -188,7 +208,7 @@ body {
 .carousel-item img {
     margin: auto;
     display: block;
-    width: 90vw;
+    width: 83.3vw;
     height: 400px;
 }
 
@@ -291,33 +311,40 @@ body {
     padding-bottom: 50px;
 }
 
+.section-2 .whole {
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 3vw; */
+}
+
 .section-2 .left {
     padding-top: 3%;
-    width: 52vw;
+    width: 40vw;
     display: flex;
 }
 
 .section-2 .pict {
-    width: 30vw;
+    width: 20vw;
     margin: auto;
     min-width: 500px;
 }
 
 .section-2 .right {
     align-items: center;
-    transform: translateX(-3vw);
+    /* transform: translateX(-3vw); */
     padding: 50px 0;
-    width: 45vw;
+    width: 40vw;
 }
 
 .section-2 .box {
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     display: flex;
     margin: 20px 0;
 }
 
 .section-2 .pict1 {
-    margin-right: 24px;
+    margin-right: 21px;
     min-width: 200px;
     width: 208px;
     height: 140px;
@@ -328,7 +355,7 @@ body {
 .section-2 .icon1 {
     padding: 10px;
     margin-top: 20px;
-    margin-right: 24px;
+    margin-right: 21px;
     width: 15px;
     height: 12px;
     background: #ABC4AA;
@@ -337,6 +364,7 @@ body {
 
 .section-2 .text1 {
     padding-top: 20px;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 22.5px;
     line-height: 120%;
@@ -360,7 +388,7 @@ body {
 }
 
 .footer .whole {
-    padding: 30px 80px 40px 80px;
+    padding: 30px 8.3vw 40px 8.3vw;
 }
 
 .footer .title {
@@ -412,22 +440,58 @@ body {
 }
 
 @media screen and (max-width: 1200px)and (min-width: 800px) {
+
+    /* NAVBAR */
+    .navbar .center {
+        width: 45vw;
+    }
+
+    .navbar .whole {
+        padding: 0 8.6vw;
+    }
+
+    .carousel-item img {
+        width: 82.7vw;
+    }
+
+    /* SECTION 2 */
     .section-2 {
         display: block;
+    }
+
+    .section-2 .whole {
+        display: block;
+        padding: 0 8.6vw;
+        width: auto;
     }
 
     .section-2 .left {
         justify-content: center;
         display: flex;
-        margin: auto;
-        width: 90vw;
+        /* margin: auto; */
+        width: 82.7vw;
         padding-top: 100px;
     }
 
     .section-2 .right {
-        margin: auto;
-        width: 90vw;
-        padding-left: 7vw;
+        /* margin: auto; */
+        width: 100%;
+        /* padding:  0 6vw; */
+        transform: none;
+    }
+
+    .section-2 .box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-2 .pict {
+        margin: 0;
+        width: 60vw;
+    }
+
+    .section-2 .icon1 {
+        display: none;
     }
 
     /* FOOTER */
@@ -441,6 +505,10 @@ body {
 
     .footer .kontak.show {
         display: none;
+    }
+
+    .footer .whole {
+        padding: 30px 8.6vw 40px 8.6vw;
     }
 
 }
@@ -462,13 +530,13 @@ body {
 
     .navbar .hamburger {
         display: block;
-        margin-right: 5vw;
+        /* margin-right: 5vw; */
     }
 
     .navbar .hamburger2 {
         transform-origin: top left;
         display: block;
-        transform: rotate(90deg);
+        transform: rotate(90deg) translateY(-35px);
     }
 
     /* CAROUSEL  */
@@ -484,22 +552,26 @@ body {
         width: 100vw;
         display: block;
     }
+    .section-2 .whole{
+        display: block;
+        padding: 0 6.6vw;
+    }
 
     .section-2 .left {
-        width: 100vw;
+        width: 86.6vw;
         height: auto;
     }
 
     .section-2 .right {
         padding-top: 25px;
         transform: translate(0);
-        width: 100vw;
+        width: 80.6vw;
         height: auto;
         padding-bottom: 25px;
     }
 
     .section-2 .pict {
-        width: 70vw;
+        width: 86.6vw;
         min-width: 0px;
     }
 
@@ -562,7 +634,7 @@ body {
 
     /* NAVBAR */
     .navbar .left {
-        margin-left: 5vw;
+        margin-left: 0vw;
     }
 
     .navbar .center {
@@ -571,6 +643,17 @@ body {
 
     .navbar .right {
         display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        margin-right: 0vw;
+    }
+
+    .navbar .hamburger2 {
+        transform-origin: top left;
+        display: block;
+        transform: rotate(90deg) translateY(-35px);
     }
 
     /* CAROUSEL  */
@@ -593,19 +676,20 @@ body {
     }
 
     .section-2 .left {
-        width: 100vw;
+        width: 86.6vw;
         height: auto;
     }
 
     .section-2 .right {
         transform: translate(0);
-        width: 100vw;
+        width: 86.6vw;
         height: auto;
         padding-bottom: 50px;
     }
 
     .section-2 .text1 {
         padding-top: 0px;
+        font-size: 15px;
     }
 
     .section-2 .mainPict {
@@ -630,7 +714,7 @@ body {
     }
 
     .section-2 .box {
-        width: 90vw;
+        width: 86.6vw;
         min-height: 130px;
         margin: auto;
         margin-bottom: 20px;
@@ -655,10 +739,6 @@ body {
 
     .section-2 .text {
         width: 80vw;
-    }
-
-    .section-2 .text1 {
-        font-size: 20px;
     }
 
     .section-2 .text2 {

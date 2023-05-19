@@ -13,31 +13,33 @@
 <body>
     <!-- NAVBAR -->
     <div class="navbar">
-        <div class="left"> Clay Course</div>
-        <div class="center">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
-                <li> <a href="/html/FAQ.html">FAQ</a></li>
-                <li><a href="/html/About.html">About Us</a></li>
-            </ul>
-        </div>
-        <div class="right">
-            <a href="/html/Login.html"><button class="profile">Profile</button></a>
-        </div>
-        <div class="hamburger" id="burger">
-            <img src="/assets/icon/hamburger.svg">
-        </div>
-        <div class="dropdownHid" id="DDb">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
-                <li> <a href="/html/FAQ.html">FAQ</a></li>
-                <li><a href="/html/About.html">About Us</a></li>
-                <li><a href="/html/Login.html"><span class="span"
-                            style="font-size: 16px; background-color: #a98484; width: 100%; text-align: center; border-radius: 10px;">Profile</span></a>
-                </li>
-            </ul>
+        <div class="whole">
+            <div class="left"> Clay Course</div>
+            <div class="center">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a id="coursepage" href="/html/Courses.html">Courses</a></li>
+                    <li> <a href="/html/FAQ.html">FAQ</a></li>
+                    <li><a href="/html/About.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="/html/Login.html"><button class="profile">Profile</button></a>
+            </div>
+            <div class="hamburger" id="burger">
+                <img src="/assets/icon/hamburger.svg">
+            </div>
+            <div class="dropdownHid" id="DDb">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/html/Courses.html">Courses</a></li>
+                    <li> <a href="/html/FAQ.html">FAQ</a></li>
+                    <li><a href="/html/About.html">About Us</a></li>
+                    <li><a href="/html/Login.html"><span class="span"
+                                style="font-size: 16px; background-color: #a98484; width: 100%; text-align: center; border-radius: 10px;">Profile</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <script>
@@ -79,111 +81,115 @@
 
     <!-- SECTION 1 -->
     <div class="section-1">
-        <div class="left">
-            <h3 class="main">Frequently Asked Question</h3>
-        </div>
-        <div class="right">
-            <div id="myWhole" class="dropdown hidden1">
-                <div class="atas">
-                    <h3 class="title">How long is the class duration?</h3>
-                    <img src="../assets/icon/Tambah.svg">
-                </div>
-                <h3 id="myDesc" class="hidden">The class duration depends on the class that you enroll.</h3>
+        <div class="whole">
+            <div class="left">
+                <h3 class="main">Frequently Asked Question</h3>
             </div>
-
-            <script>
-                // Mendapatkan elemen heading berdasarkan id
-                const myDesc = document.getElementById("myDesc");
-                const myWhole = document.getElementById("myWhole")
-
-                // Fungsi handleClick untuk mengubah kelas dari elemen
-                function handleClick() {
-                    // Menggunakan properti classList untuk menambahkan atau menghapus kelas
-                    if (myDesc.classList.contains("hidden") && myWhole.classList.contains("hidden1")) {
-                        myDesc.classList.remove("hidden");
-                        myDesc.classList.add("active");
-                        myWhole.classList.remove("hidden1")
-                        myWhole.classList.add("active1")
-                    } else {
-                        myDesc.classList.remove("active");
-                        myDesc.classList.add("hidden");
-                        myWhole.classList.remove("active1")
-                        myWhole.classList.add("hidden1")
-                    }
-                }
-                // Menambahkan event listener ke elemen heading untuk event click
-                myDesc.addEventListener("click", handleClick);
-                myWhole.addEventListener("click", handleClick);
-            </script>
-
-
-            <div id="myWhole2" class="dropdown hidden3">
-                <div class="atas">
-                    <h3 class="title">Can the tools that have been sent be returned?</h3>
-                    <img src="../assets/icon/Tambah.svg">
+            <div class="right">
+                <div id="myWhole" class="dropdown hidden1">
+                    <div class="atas">
+                        <h3 class="title">How long is the class duration?</h3>
+                        <img src="../assets/icon/Tambah.svg">
+                    </div>
+                    <h3 id="myDesc" class="hidden">The class duration depends on the class that you enroll.</h3>
                 </div>
-                <h3 id="myDesc2" class="hidden2">No, the tools that have been sent are not our responsibility anymore.
-                    If there is damages it is the responsibility of the courier.</h3>
-            </div>
-            <script>
-                // Mendapatkan elemen heading berdasarkan id
-                const myDesc2 = document.getElementById("myDesc2");
-                const myWhole2 = document.getElementById("myWhole2")
 
-                // Fungsi handleClick untuk mengubah kelas dari elemen
-                function handleClick() {
-                    // Menggunakan properti classList untuk menambahkan atau menghapus kelas
-                    if (myDesc2.classList.contains("hidden2") && myWhole2.classList.contains("hidden3")) {
-                        myDesc2.classList.remove("hidden2");
-                        myDesc2.classList.add("active2");
-                        myWhole2.classList.remove("hidden3")
-                        myWhole2.classList.add("active3")
-                    } else {
-                        myDesc2.classList.remove("active2");
-                        myDesc2.classList.add("hidden2");
-                        myWhole2.classList.remove("active3")
-                        myWhole2.classList.add("hidden3")
+                <script>
+                    // Mendapatkan elemen heading berdasarkan id
+                    const myDesc = document.getElementById("myDesc");
+                    const myWhole = document.getElementById("myWhole")
+
+                    // Fungsi handleClick untuk mengubah kelas dari elemen
+                    function handleClick() {
+                        // Menggunakan properti classList untuk menambahkan atau menghapus kelas
+                        if (myDesc.classList.contains("hidden") && myWhole.classList.contains("hidden1")) {
+                            myDesc.classList.remove("hidden");
+                            myDesc.classList.add("active");
+                            myWhole.classList.remove("hidden1")
+                            myWhole.classList.add("active1")
+                        } else {
+                            myDesc.classList.remove("active");
+                            myDesc.classList.add("hidden");
+                            myWhole.classList.remove("active1")
+                            myWhole.classList.add("hidden1")
+                        }
                     }
-                }
+                    // Menambahkan event listener ke elemen heading untuk event click
+                    myDesc.addEventListener("click", handleClick);
+                    myWhole.addEventListener("click", handleClick);
+                </script>
 
-                // Menambahkan event listener ke elemen heading untuk event click
-                myDesc2.addEventListener("click", handleClick);
-                myWhole2.addEventListener("click", handleClick);
-            </script>
 
-            <div id="myWhole3" class="dropdown hidden4">
-                <div class="atas">
-                    <h3 class="title">How to join the class?</h3>
-                    <img src="../assets/icon/Tambah.svg">
+                <div id="myWhole2" class="dropdown hidden3">
+                    <div class="atas">
+                        <h3 class="title">Can the tools that have been sent be returned?</h3>
+                        <img src="../assets/icon/Tambah.svg">
+                    </div>
+                    <h3 id="myDesc2" class="hidden2">No, the tools that have been sent are not our responsibility
+                        anymore.
+                        If there is damages it is the responsibility of the courier.</h3>
                 </div>
-                <h3 id="myDesc3" class="hidden5">To join the class click on the navigation courses button then enroll
-                    the class that you want and do the payment.</h3>
-            </div>
-            <script>
-                // Mendapatkan elemen heading berdasarkan id
-                const myDesc3 = document.getElementById("myDesc3");
-                const myWhole3 = document.getElementById("myWhole3")
+                <script>
+                    // Mendapatkan elemen heading berdasarkan id
+                    const myDesc2 = document.getElementById("myDesc2");
+                    const myWhole2 = document.getElementById("myWhole2")
 
-                // Fungsi handleClick untuk mengubah kelas dari elemen
-                function handleClick() {
-                    // Menggunakan properti classList untuk menambahkan atau menghapus kelas
-                    if (myDesc3.classList.contains("hidden5") && myWhole3.classList.contains("hidden4")) {
-                        myDesc3.classList.remove("hidden5");
-                        myDesc3.classList.add("active5");
-                        myWhole3.classList.remove("hidden4")
-                        myWhole3.classList.add("active4")
-                    } else {
-                        myDesc3.classList.remove("active5");
-                        myDesc3.classList.add("hidden5");
-                        myWhole3.classList.remove("active4")
-                        myWhole3.classList.add("hidden4")
+                    // Fungsi handleClick untuk mengubah kelas dari elemen
+                    function handleClick() {
+                        // Menggunakan properti classList untuk menambahkan atau menghapus kelas
+                        if (myDesc2.classList.contains("hidden2") && myWhole2.classList.contains("hidden3")) {
+                            myDesc2.classList.remove("hidden2");
+                            myDesc2.classList.add("active2");
+                            myWhole2.classList.remove("hidden3")
+                            myWhole2.classList.add("active3")
+                        } else {
+                            myDesc2.classList.remove("active2");
+                            myDesc2.classList.add("hidden2");
+                            myWhole2.classList.remove("active3")
+                            myWhole2.classList.add("hidden3")
+                        }
                     }
-                }
 
-                // Menambahkan event listener ke elemen heading untuk event click
-                myDesc3.addEventListener("click", handleClick);
-                myWhole3.addEventListener("click", handleClick);
-            </script>
+                    // Menambahkan event listener ke elemen heading untuk event click
+                    myDesc2.addEventListener("click", handleClick);
+                    myWhole2.addEventListener("click", handleClick);
+                </script>
+
+                <div id="myWhole3" class="dropdown hidden4">
+                    <div class="atas">
+                        <h3 class="title">How to join the class?</h3>
+                        <img src="../assets/icon/Tambah.svg">
+                    </div>
+                    <h3 id="myDesc3" class="hidden5">To join the class click on the navigation courses button then
+                        enroll
+                        the class that you want and do the payment.</h3>
+                </div>
+                <script>
+                    // Mendapatkan elemen heading berdasarkan id
+                    const myDesc3 = document.getElementById("myDesc3");
+                    const myWhole3 = document.getElementById("myWhole3")
+
+                    // Fungsi handleClick untuk mengubah kelas dari elemen
+                    function handleClick() {
+                        // Menggunakan properti classList untuk menambahkan atau menghapus kelas
+                        if (myDesc3.classList.contains("hidden5") && myWhole3.classList.contains("hidden4")) {
+                            myDesc3.classList.remove("hidden5");
+                            myDesc3.classList.add("active5");
+                            myWhole3.classList.remove("hidden4")
+                            myWhole3.classList.add("active4")
+                        } else {
+                            myDesc3.classList.remove("active5");
+                            myDesc3.classList.add("hidden5");
+                            myWhole3.classList.remove("active4")
+                            myWhole3.classList.add("hidden4")
+                        }
+                    }
+
+                    // Menambahkan event listener ke elemen heading untuk event click
+                    myDesc3.addEventListener("click", handleClick);
+                    myWhole3.addEventListener("click", handleClick);
+                </script>
+            </div>
         </div>
     </div>
     <div class="section-2">

@@ -16,8 +16,7 @@ body {
     max-width: 100vw;
 }
 
-
-/* NAVBAR  */
+/* NAVBAR */
 .navbar {
     z-index: 999999999;
     width: 100vw;
@@ -31,14 +30,30 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 
-.navbar ul {
+.navbar .whole {
+    width: 100vw;
+    padding: 0 8.3vw;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .center {
+    width: 30vw;
+}
+
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
     list-style: none;
     margin: 0%;
 }
 
 .navbar ul li a {
-    margin: 20px 26px;
+    margin: 20px 0px;
 
     /* text */
     font-weight: 700;
@@ -75,20 +90,21 @@ body {
 
 .navbar .left {
     margin: 29px 0;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
+/* 
 .navbar .right {
-    margin: 14px 0;
-}
+    /* margin: 14px 0; */
+/* } */
 
 .navbar .profile {
     display: flex;
     align-items: center;
-    padding: 14px 20px;
+    padding: 14px 24px;
     background: #42290E;
     border-radius: 100px;
-    margin-right: 80px;
+    /* margin-right: 80px; */
 
     /* text */
     font-weight: 700;
@@ -96,16 +112,20 @@ body {
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .navbar .profile:hover {
     background: #f9e4cc;
     color: #42290E;
     transition: 0.3s;
-
 }
 
 .navbar .hamburger {
+    display: none;
+}
+
+.navbar .hamburger2 {
     display: none;
 }
 
@@ -119,10 +139,12 @@ body {
     top: 60px;
     right: 5vw;
     display: block;
-    width: 180px;
+    width: 130px;
     height: auto;
     background-color: #5b4732;
+    padding: 0 5vw;
 }
+
 
 .navbar .dropdown ul {
     list-style: none;
@@ -140,7 +162,7 @@ body {
 /* SECTION 2 */
 
 .section-2 {
-    min-height: 70vh;
+    min-height: 50vh;
     width: 100vw;
     height: auto;
     padding-top: 70px;
@@ -152,7 +174,7 @@ body {
     align-items: center;
     width: 100vw;
     display: flex;
-    padding: 150px 0 100px 0;
+    padding: 20vh 8.3vw 100px 8.3vw;
     /* padding-bottom: 400px; */
     background: linear-gradient(180deg, rgba(64, 30, 5, 0.81) 0%, #FFFFFF 100%);
     justify-content: space-around;
@@ -170,6 +192,7 @@ body {
     font-size: 64px;
     line-height: 120%;
     color: #000000;
+    margin-bottom: 23px;
 }
 
 .section-2 .desc {
@@ -188,7 +211,7 @@ body {
 }
 
 .section-2 .pict {
-    width: 35vw;
+    width: 45vw;
     margin: 0;
 }
 
@@ -201,11 +224,13 @@ body {
     height: auto;
 }
 
+.section-3 .whole {
+    padding: 0% 8.3vw;
+}
+
 .section-3 .card {
     /* padding: 10% 30px; */
-    padding: 10px 15px 10PX 10PX;
-    padding-bottom: 0;
-    width: 520px;
+    width: 557px;
     height: 262px;
     background: transparent;
     border: 1px solid #42290E;
@@ -215,21 +240,23 @@ body {
 
 .section-3 .atas {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 135px;
     padding-top: 69px;
 }
 
 .section-3 .bawah {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 135px;
 }
 
 .section-3 .top {
-    margin-top: 3%;
+    padding: 25px 33px 0PX 33PX;
+    /* margin-top: 3%; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 
 }
 
@@ -237,7 +264,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 20%;
     /* margin-right: 26px; */
     justify-content: center;
 
@@ -253,7 +280,7 @@ body {
     font-size: 15px;
     line-height: 160%;
     color: #000000;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
 }
 
 .section-3 .title {
@@ -265,7 +292,7 @@ body {
 .section-3 .right {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 77%;
 }
 
 .section-3 .desc {
@@ -273,20 +300,27 @@ body {
     font-size: 18px;
     line-height: 140%;
     color: #000000;
-    padding-right: 15px;
+    /* padding-right: 15px; */
     display: flex;
     height: 100%;
     /* align-items: center; */
     text-align: justify;
+    align-items: center;
 }
 
 .section-3 a {
     margin: auto;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 90%;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+    margin-top: 5px;
+    margin-bottom: 21px;
+    margin-left: 33px;
+    margin-right: 33px;
+    /* width: 90%; */
+    height: 25px;
+    /* max-height: 60px; */
     background: #42290E;
     border-radius: 100px;
     align-items: center;
@@ -309,7 +343,7 @@ body {
 }
 
 .footer .whole {
-    padding: 30px 80px 40px 80px;
+    padding: 30px 8.3vw 40px 8.3vw;
 }
 
 .footer .title {
@@ -360,22 +394,33 @@ body {
     margin-top: 24px;
 }
 
+
 @media screen and (max-width: 1300px) and (min-width: 800px) {
+
+    /* NAVBAR */
+    .navbar .center {
+        width: 45vw;
+    }
+
+    .navbar .whole {
+        padding: 0 8.6vw;
+    }
 
     /* SECTION 2 */
     .section-2 .whole {
         display: block;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-top: 10vh;
+        padding-left: 8.6vw;
+        padding-right: 8.6vw;
         padding-bottom: 20px;
     }
 
     .section-2 .left {
-        width: 80vw;
+        width: 82.7vw;
     }
 
     .section-2 .right {
-        width: 80vw;
+        width: 82.7vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -390,6 +435,14 @@ body {
 
 
     /* SECTION 3 */
+    .section-3 .whole {
+        padding: 0 8.6vw;
+    }
+
+    .section-3 .left {
+        width: 20%;
+    }
+
     .section-3 .atas {
         display: block;
         margin-bottom: 0;
@@ -415,12 +468,12 @@ body {
     }
 
     .section-3 .title {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .section-3 .desc {
-        margin-left: 5px;
-        padding: 5px;
+        /* margin-left: 5px;
+        padding: 5px; */
         font-size: 18px;
     }
 
@@ -428,7 +481,13 @@ body {
         display: flex;
         justify-content: center;
         margin: 10px auto;
-        height: 20px;
+        /* height: 20px; */
+    }
+
+    .section-3 a {
+        margin-top: 10px;
+        height: 30px;
+        margin-bottom: 0;
     }
 
     /* FOOTER */
@@ -443,14 +502,15 @@ body {
     .footer .kontak.show {
         display: none;
     }
+
+    .footer .whole {
+        padding: 30px 8.6vw 40px 8.6vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
 
     /* NAVBAR */
-    .navbar .left {
-        margin-left: 5vw;
-    }
 
     .navbar .center {
         display: none;
@@ -462,13 +522,13 @@ body {
 
     .navbar .hamburger {
         display: block;
-        margin-right: 5vw;
+        /* margin-right: 5vw; */
     }
 
     .navbar .hamburger2 {
         transform-origin: top left;
         display: block;
-        transform: rotate(90deg);
+        transform: rotate(90deg) translateY(-35px);
     }
 
     /* SECTION 2 */
@@ -480,14 +540,12 @@ body {
         /* padding-left: 5vw;
         padding-right: 5vw; */
         padding-bottom: 10px;
-    }
-
-    .section-2 .left {
-        padding-left: 5vw;
+        padding: 0 6.6vw;
+        width: 86.8vw;
     }
 
     .section-2 .right {
-        width: 90vw;
+        width: 86.8vw;
         padding-top: 20px;
         display: flex;
         align-items: center;
@@ -518,6 +576,16 @@ body {
 
 
     /* SECTION 3 */
+    .section-3 .top {
+        padding: 20px 20px 0 20px;
+    }
+    .section-3 .left{
+        width: 30%;
+    }
+    .section-3 .right{
+        width: 70%;
+    }
+
     .section-3 .atas {
         display: block;
         margin-bottom: 0;
@@ -531,7 +599,7 @@ body {
 
     .section-3 .card {
         margin: auto;
-        width: 80vw;
+        width: 100%;
         max-width: 500px;
         margin-bottom: 50px;
         height: auto;
@@ -539,23 +607,31 @@ body {
 
     .section-3 .name {
         margin-bottom: 0;
-    }
-
-    .section-3 .title {
         font-size: 12px;
     }
 
-    .section-3 .desc {
-        margin-left: 5px;
-        padding: 5px;
-        font-size: 14px;
+    .section-3 .title {
+        font-size: 10px;
+        text-align: center;
     }
 
-    .section-3 button {
-        display: flex;
-        justify-content: center;
-        margin: 10px auto;
-        height: 20px;
+    .section-3 .desc {
+        /* margin-left: 5px;
+        padding: 5px; */
+        font-size: 12px;
+    }
+
+    .section-3 .image {
+        width: 50px;
+        height: auto;
+    }
+
+    .section-3 a {
+        /* display: flex;
+        justify-content: center; */
+        margin: 8px 20px 18px 20px;
+        height: 15px;
+
     }
 
     /* FOOTER  */
