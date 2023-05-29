@@ -165,6 +165,7 @@ body {
     justify-content: center;
     background: #F3DEBA;
     margin: auto;
+    height: auto;
     min-height: 100vh;
     align-items: center;
 }
@@ -371,6 +372,11 @@ body {
     
     .navbar .whole{
         padding: 0 8.6vw;
+    }
+    
+    /* LOGIN */
+    .login .whole{
+        padding: 15vh 8.6vw 5vh 8.6vw;
     }
 
     /* FOOTER */
